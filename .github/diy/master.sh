@@ -87,7 +87,7 @@ git clone --depth 1 https://github.com/eamonxg/luci-app-aurora-config
 git clone --depth 1 https://github.com/Beomjun/luci-theme-smart
 git_sparse_clone master "https://github.com/x-wrt/com.x-wrt" "x-wrt" luci-app-wizard luci-app-fakemesh
 #git clone --depth 1 https://github.com/kiddin9/luci-app-wizard
-git_sparse_clone main "https://github.com/kiddin9/kwrt-packages" "kwrt-packages" luci-app-bypass
+#git_sparse_clone main "https://github.com/kiddin9/kwrt-packages" "kwrt-packages" luci-app-bypass
 git clone --depth 1 https://github.com/kiddin9/luci-app-dnsfilter
 #sed -i 's/ipset/dnsmasq_full_ipset/g' luci-app-dnsfilter/Makefile
 git clone --depth 1 https://github.com/kiddin9/luci-app-timewol
@@ -131,7 +131,7 @@ git clone --depth 1 https://github.com/sirpdboy/luci-app-eqosplus
 sed -i 's#..translate("Suggested feedback:.*##g' luci-app-eqosplus/luasrc/model/cbi/eqosplus.lua
 git clone --depth 1 https://github.com/sirpdboy/luci-app-netdata
 git clone --depth 1 https://github.com/sirpdboy/luci-app-netwizard netwizard1 && mv -n netwizard1/luci-app-netwizard ./; rm -rf netwizard1
-sed -i 's#..translate("For specific usage,.*# )#g' luci-app-netwizard/luasrc/model/cbi/netwizard/netwizard.lua
+#sed -i 's#..translate("For specific usage,.*# )#g' luci-app-netwizard/luasrc/model/cbi/netwizard/netwizard.lua
 #git clone --depth 1 https://github.com/sirpdboy/luci-app-netspeedtest netspeedtest1 && mv -n netspeedtest1/{*speedtest*,homebox} ./; rm -rf netspeedtest1
 #git clone --depth 1 https://github.com/muink/luci-app-netspeedtest
 #git clone --depth 1 https://github.com/gdy666/luci-app-lucky lucky1 && mv -n lucky1/*lucky ./; rm -rf lucky1
@@ -139,7 +139,7 @@ git clone --depth 1 https://github.com/sirpdboy/luci-app-lucky lucky1 && mv -n l
 sed -i '143,152d' luci-app-lucky/htdocs/luci-static/resources/view/lucky/config.js
 git clone --depth 1 https://github.com/sirpdboy/luci-app-parentcontrol
 git clone --depth 1 https://github.com/sirpdboy/luci-app-partexp partexp1 && mv -n partexp1/luci-app-partexp ./; rm -rf partexp1
-sed -i 's#<br/>For specific usage,.*# )#g' luci-app-partexp/luasrc/model/cbi/partexp/global.lua
+#sed -i 's#<br/>For specific usage,.*# )#g' luci-app-partexp/luasrc/model/cbi/partexp/global.lua
 git clone --depth 1 https://github.com/sirpdboy/luci-app-poweroffdevice poweroffdevice1 && mv -n poweroffdevice1/luci-app-poweroffdevice ./; rm -rf poweroffdevice1
 git clone --depth 1 https://github.com/sirpdboy/luci-app-watchdog watchdog1 && mv -n watchdog1/*watchdog ./; rm -rf watchdog1
 #替换通配
@@ -163,7 +163,7 @@ git clone --depth 1 https://github.com/Thaolga/openwrt-nekobox && mv -n openwrt-
 git clone --depth 1 https://github.com/nikkinikki-org/OpenWrt-nikki && mv -n OpenWrt-nikki/*nikki ./; rm -rf OpenWrt-nikki
 sed -i 's/<a href="https:\/\/github\.com\/nikkinikki-org\/OpenWrt-nikki\/wiki" target="_blank">${_(\x27How To Use\x27)}<\/a>//g' luci-app-nikki/htdocs/luci-static/resources/view/nikki/app.js
 git clone --depth 1 https://github.com/nikkinikki-org/OpenWrt-momo && mv -n OpenWrt-momo/*momo ./; rm -rf OpenWrt-momo
-git clone --depth 1 https://github.com/lwb1978/openwrt-gecoosac gecoosac1 && mv -n gecoosac1/*gecoosac ./; rm -rf gecoosac1
+git clone --depth 1 https://github.com/laipeng668/luci-app-gecoosac gecoosac1 && mv -n gecoosac1/*gecoosac ./; rm -rf gecoosac1
 git clone --depth 1 https://github.com/ophub/luci-app-amlogic amlogic1 && mv -n amlogic1/luci-app-amlogic ./; rm -rf amlogic1
 git clone --depth 1 https://github.com/clion007/adss adss1 && mv -n adss1/*-adss ./; rm -rf adss1
 git clone --depth 1 https://github.com/QiuSimons/openwrt-natflow natflow1 && mv -n natflow1/natflow ./; rm -rf natflow1
@@ -199,9 +199,6 @@ git clone --depth 1 https://github.com/animegasan/luci-app-droidmodem
 git clone --depth 1 https://github.com/lvqier/luci-app-dnsmasq-ipset
 #git clone --depth 1 https://github.com/chenmozhijin/turboacc turboacc1 && mv -n turboacc1/luci-app-turboacc ./; rm -rf turboacc1
 #git clone -b package --depth 1 https://github.com/chenmozhijin/turboacc turboacc-packages
-git clone --depth 1 https://github.com/animegasan/luci-app-dnsleaktest
-git clone --depth 1 https://github.com/animegasan/luci-app-ipinfo
-#git clone --depth 1 https://github.com/animegasan/luci-app-quickstart
 git clone --depth 1 https://github.com/lucikap/luci-app-nettask nettask1 && mv -n nettask1/*nettask ./; rm -rf nettask1
 git clone --depth 1 https://github.com/torguardvpn/luci-app-easymesh
 #git clone --depth 1 https://github.com/mingxiaoyu/luci-app-cloudflarespeedtest cloudflarespeedtest1 && mv -n cloudflarespeedtest1/applications/luci-app-cloudflarespeedtest ./; rm -rf cloudflarespeedtest1
@@ -272,25 +269,9 @@ git clone -b dev --depth 1 https://github.com/justice2001/luci-app-multi-frpc
 
 sed -i \
 -e 's?include \.\./\.\./\(lang\|devel\|net\|utils\)?include $(TOPDIR)/feeds/packages/\1?' \
--e 's?2. Clash For OpenWRT?3. Applications?' \
 -e 's?\.\./\.\./luci.mk?$(TOPDIR)/feeds/luci/luci.mk?' \
--e 's/ca-certificates/ca-bundle/' \
 */Makefile
 
-sed -i 's/luci-lib-ipkg/luci-base/g' luci-app-store/Makefile
-sed -i 's/+dockerd/+dockerd +cgroupfs-mount/' luci-app-docker*/Makefile
-sed -i '$i /etc/init.d/dockerd restart &' luci-app-docker*/root/etc/uci-defaults/*
-#sed -i 's/+libcap /+libcap +libcap-bin /' luci-app-openclash/Makefile
-sed -i 's/\(+luci-compat\)/\1 +luci-theme-argon/' luci-app-argon-config/Makefile
-sed -i 's/\(+luci-compat\)/\1 +luci-theme-design/' luci-theme-design-config/Makefile
-sed -i 's/\(+luci-compat\)/\1 +luci-theme-argone/' luci-app-argone-config/Makefile
-#sed -i -e 's/nas/services/g' -e 's/NAS/Services/g' $(grep -rl 'nas\|NAS' luci-app-fileassistant)
-#sed -i '65,73d' adguardhome/Makefile
-sed -i '/entry({"admin", "nas"}, firstchild(), "NAS", 45).dependent = false/d; s/entry({"admin", "network", "eqos"}, cbi("eqos"), _("EQoS"))/entry({"admin", "network", "eqos"}, cbi("eqos"), _("EQoS"), 121).dependent = true/' luci-app-eqos/luasrc/controller/eqos.lua
-#sed -i '/^\t\$(call Build\/Prepare\/Default)/a \\tif [ -d "$(BUILD_DIR)\/AdGuardHome-$(PKG_VERSION)" ]; then \\\n\t\tmv "$(BUILD_DIR)\/AdGuardHome-$(PKG_VERSION)\/"* "$(BUILD_DIR)\/adguardhome-$(PKG_VERSION)\/"; \\\n\tfi' adguardhome/Makefile
-#sed -i '/gzip -dc $(DL_DIR)\/$(FRONTEND_FILE) | $(HOST_TAR) -C $(PKG_BUILD_DIR)\/ $(TAR_OPTIONS)/a \\t( cd "$(BUILD_DIR)\/adguardhome-$(PKG_VERSION)"; go mod tidy )' adguardhome/Makefile
 rm -rf ./*/.git ./*/.gitattributes ./*/.svn ./*/.github ./*/.gitignore create_acl_for_luci.err create_acl_for_luci.ok create_acl_for_luci.warn
-rm -rf adguardhome/patches
-#sed -i '59s/.*/local port=luci.sys.exec("awk \x27\/^dns:\/ {found_dns=1} found_dns \x26\x26 \/\^ port:\/ {print $2; exit}\x27 "..configpath.." 2>nul")/' luci-app-adguardhome/luasrc/model/cbi/AdGuardHome/base.lua
 exit 0
 
