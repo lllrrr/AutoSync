@@ -213,7 +213,7 @@ git clone --depth 1 https://github.com/4IceG/luci-app-sms-tool-js sms-tool2 && m
 git clone --depth 1 https://github.com/4IceG/luci-app-crontab-wizard crontab-wizard1 && mv -n crontab-wizard1/luci-app-crontab-wizard ./; rm -rf crontab-wizard1
 git clone --depth 1 https://github.com/4IceG/luci-app-modemband modemband1 && mv -n modemband1/*modemband ./; rm -rf modemband1
 git clone --depth 1 https://github.com/4IceG/luci-app-modemdata modemdata1 && mv -n modemdata1/luci-app-modemdata ./; rm -rf modemdata1
-git clone --depth 1 https://github.com/timsaya/openwrt-bandix bandix1 && mv -n bandix1/*bandix ./; rm -rf bandix1
+git clone --depth 1 https://github.com/timsaya/openwrt-bandix bandix1 && mv -n bandix1/*bandix ./bandix; rm -rf bandix1
 git clone --depth 1 https://github.com/timsaya/luci-app-bandix bandix2 && mv -n bandix2/*bandix ./; rm -rf bandix2
 #sed -i "s#Bandix 流量监控#流量监控#g" luci-app-bandix/po/zh-cn/bandix.po
 #sed -i "s#Bandix DNS 监控#DNS 监控#g" luci-app-bandix/po/zh_Hans/bandix.po
