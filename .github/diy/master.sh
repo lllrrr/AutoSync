@@ -132,7 +132,7 @@ sed -i 's#..translate("Suggested feedback:.*##g' luci-app-eqosplus/luasrc/model/
 git clone --depth 1 https://github.com/sirpdboy/luci-app-netdata
 git clone --depth 1 https://github.com/sirpdboy/luci-app-netwizard netwizard1 && mv -n netwizard1/luci-app-netwizard ./; rm -rf netwizard1
 #sed -i 's#..translate("For specific usage,.*# )#g' luci-app-netwizard/luasrc/model/cbi/netwizard/netwizard.lua
-#git clone --depth 1 https://github.com/sirpdboy/luci-app-netspeedtest netspeedtest1 && mv -n netspeedtest1/{*speedtest*,homebox} ./; rm -rf netspeedtest1
+git clone --depth 1 https://github.com/sirpdboy/netspeedtest netspeedtest1 && mv -n netspeedtest1/{*speedtest*,homebox} ./; rm -rf netspeedtest1
 #git clone --depth 1 https://github.com/muink/luci-app-netspeedtest
 #git clone --depth 1 https://github.com/gdy666/luci-app-lucky lucky1 && mv -n lucky1/*lucky ./; rm -rf lucky1
 git clone --depth 1 https://github.com/sirpdboy/luci-app-lucky lucky1 && mv -n lucky1/*lucky ./; rm -rf lucky1
@@ -251,6 +251,7 @@ git clone --depth 1 https://github.com/LIKE2000-ART/luci-app-picoclaw picoclaw1 
 git clone --depth 1 https://github.com/10000ge10000/luci-app-openclaw
 git clone --depth 1 https://github.com/jimmyk1m/luci-app-autoredial
 git clone --depth 1 https://github.com/Zesuy/luci-app-multi-login
+git clone --depth 1 https://github.com/pengcong226/luci-app-easy-mwan3
 
 git_sparse_clone openwrt-24.10 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-24.10 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
