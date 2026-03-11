@@ -125,8 +125,8 @@ git clone --depth 1 https://github.com/sirpdboy/luci-app-cupsd cupsd1 && mv -n c
 git clone --depth 1 https://github.com/sirpdboy/luci-app-ddns-go ddns-go1 && mv -n ddns-go1/*ddns-go ./; rm -rf ddns-go1
 rm -rf luci-app-ddns-go/root/etc/config
 #sed -i "s#statusView,#statusView);#g" luci-app-ddns-go/htdocs/luci-static/resources/view/ddns-go/config.js
-sed -i '283,292d' luci-app-ddns-go/htdocs/luci-static/resources/view/ddns-go/config.js
-sed -i '222,231d' luci-app-ddns-go/htdocs/luci-static/resources/view/ddns-go/log.js
+#sed -i '283,292d' luci-app-ddns-go/htdocs/luci-static/resources/view/ddns-go/config.js
+#sed -i '222,231d' luci-app-ddns-go/htdocs/luci-static/resources/view/ddns-go/log.js
 git clone --depth 1 https://github.com/sirpdboy/luci-app-eqosplus
 sed -i 's#..translate("Suggested feedback:.*##g' luci-app-eqosplus/luasrc/model/cbi/eqosplus.lua
 git clone --depth 1 https://github.com/sirpdboy/luci-app-netdata
