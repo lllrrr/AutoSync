@@ -145,13 +145,13 @@ git clone --depth 1 https://github.com/sirpdboy/luci-app-watchdog watchdog1 && m
 #替换通配
 sed -i "s#<br /><br />If you encounter any issues while using it, please submit them here.*#'));#g" luci-app-watchdog/htdocs/luci-static/resources/view/watchdog/basic.js
 sed -i "s#\[ statusView ,#statusView);#g" luci-app-watchdog/htdocs/luci-static/resources/view/watchdog/basic.js
-sed -i '97,107d' luci-app-watchdog/htdocs/luci-static/resources/view/watchdog/basic.js
-sed -i '96,105d' luci-app-watchdog/htdocs/luci-static/resources/view/watchdog/log.js
+#sed -i '97,107d' luci-app-watchdog/htdocs/luci-static/resources/view/watchdog/basic.js
+#sed -i '96,105d' luci-app-watchdog/htdocs/luci-static/resources/view/watchdog/log.js
 sed -i "s#<br /><br />If you encounter any issues while using it, please submit them here:##g" luci-app-watchdog/po/zh_Hans/watchdog.po
 sed -i "s#<br /><br />如果你在使用中遇到问题，请到这里提交：##g" luci-app-watchdog/po/zh_Hans/watchdog.po
 sed -i 's/openwrt的/设备的/g' luci-app-watchdog/po/zh_Hans/watchdog.po
 sed -i "s/option enable '0'/option enable '1'/g" watchdog/files/watchdog.config
-sed -i "s/1,/44,/g" luci-app-watchdog/root/usr/share/luci/menu.d/luci-app-watchdog.json
+#sed -i "s/1,/44,/g" luci-app-watchdog/root/usr/share/luci/menu.d/luci-app-watchdog.json
 #sed -i 's|"/tmp/watchdog/\*": \[ "write" \]|"/tmp/watchdog/*": [ "write" ],|g' luci-app-watchdog/root/usr/share/rpcd/acl.d/luci-app-watchdog.json
 git clone --depth 1 https://github.com/sirpdboy/luci-theme-kucat
 git clone --depth 1 https://github.com/sirpdboy/luci-app-kucat-config
