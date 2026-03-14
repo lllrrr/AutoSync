@@ -255,7 +255,7 @@ git clone --depth 1 https://github.com/pengcong226/luci-app-easy-mwan3
 git clone --depth 1 https://github.com/hzy306016819/luci-app-backup
 
 git_sparse_clone openwrt-24.10 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
-git_sparse_clone openwrt-24.10 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
+git_sparse_clone openwrt-24.10 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
 git_sparse_clone openwrt-24.10 "https://github.com/openwrt/packages" "24packages" net/curl
 sed -i 's/default LIBCURL_MBEDTLS/default LIBCURL_OPENSSL/g' curl/Config.in
 sed -i 's/title": "daed/title": "DAED/g' luci-app-daed\/root/usr/share/luci/menu.d/luci-app-daed\.json
@@ -266,8 +266,8 @@ sed -i 's/Frp Setting/Frpc/g' luci-app-frpc/luasrc/controller/frp.lua
 sed -i 's#internet.*#internet.")#g' luci-app-frps/luasrc/model/cbi/frps/common.lua
 sed -i 's#internet.*#internet."#g' luci-app-frps/po/zh-cn/frps.po
 #sed -i "s#<br/><a href=\"https://github.com/fatedier/frp\" target=\"_blank\">Github 项目地址</a>##g" luci-app-frps/po/zh-cn/frps.po
-git_sparse_clone other "https://github.com/Lienol/openwrt-package" "lienolother" lean/luci-app-autoreboot
-sed -i 's/system/services/g' luci-app-autoreboot/luasrc/controller/autoreboot.lua
+#git_sparse_clone other "https://github.com/Lienol/openwrt-package" "lienolother" lean/luci-app-autoreboot
+#sed -i 's/system/services/g' luci-app-autoreboot/luasrc/controller/autoreboot.lua
 #git_sparse_clone main "https://github.com/Lienol/openwrt-package" "lienol" luci-app-socat
 #git_sparse_clone main "https://github.com/kenzok8/small-package/" "kenzok8" adguardhome luci-app-adguardhome
 git clone -b dev --depth 1 https://github.com/justice2001/luci-app-multi-frpc
