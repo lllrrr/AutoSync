@@ -135,6 +135,7 @@ git clone --depth 1 https://github.com/sirpdboy/luci-app-netwizard netwizard1 &&
 git clone --depth 1 https://github.com/sirpdboy/netspeedtest netspeedtest1 && mv -n netspeedtest1/{*speedtest*,homebox} ./; rm -rf netspeedtest1
 #git clone --depth 1 https://github.com/muink/luci-app-netspeedtest
 #git clone --depth 1 https://github.com/gdy666/luci-app-lucky lucky1 && mv -n lucky1/*lucky ./; rm -rf lucky1
+#git clone --depth 1 https://github.com/0x5826/luci-app-lucky lucky1 && mv -n lucky1/*lucky ./; rm -rf lucky1
 git clone --depth 1 https://github.com/sirpdboy/luci-app-lucky lucky1 && mv -n lucky1/*lucky ./; rm -rf lucky1
 sed -i '143,152d' luci-app-lucky/htdocs/luci-static/resources/view/lucky/config.js
 git clone --depth 1 https://github.com/sirpdboy/luci-app-parentcontrol
@@ -253,6 +254,8 @@ git clone --depth 1 https://github.com/jimmyk1m/luci-app-autoredial
 git clone --depth 1 https://github.com/Zesuy/luci-app-multi-login
 git clone --depth 1 https://github.com/pengcong226/luci-app-easy-mwan3
 git clone --depth 1 https://github.com/hzy306016819/luci-app-backup
+git clone --depth 1 https://github.com/0x5826/luci-app-flowproxy flowproxy1 && mv -n flowproxy1/*flowproxy ./; rm -rf flowproxy1
+git clone --depth 1 https://github.com/jlzsss/luci-app-sxray
 
 git_sparse_clone openwrt-24.10 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-24.10 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
