@@ -47,10 +47,10 @@ git clone --depth 1 https://github.com/sbwml/luci-app-webdav
 git clone -b 25.x --depth 1 https://github.com/sbwml/packages_lang_golang golang
 #sed -i "s#GO_VERSION_PATCH:=6#GO_VERSION_PATCH:=7#g" golang/golang/Makefile
 #sed -i "s#58cbf771e44d76de6f56d19e33b77d745a1e489340922875e46585b975c2b059#178f2832820274b43e177d32f06a3ebb0129e427dd20a5e4c88df2c1763cf10a#g" golang/golang/Makefile
-git clone --depth 1 https://github.com/sbwml/packages_utils_containerd containerd
-git clone --depth 1 https://github.com/sbwml/packages_utils_docker docker
-git clone --depth 1 https://github.com/sbwml/packages_utils_dockerd dockerd
-git clone --depth 1 https://github.com/sbwml/packages_utils_runc runc
+#!git clone --depth 1 https://github.com/sbwml/packages_utils_containerd containerd
+#!git clone --depth 1 https://github.com/sbwml/packages_utils_docker docker
+#!git clone --depth 1 https://github.com/sbwml/packages_utils_dockerd dockerd
+#!git clone --depth 1 https://github.com/sbwml/packages_utils_runc runc
 git clone --depth 1 https://github.com/immortalwrt/homeproxy luci-app-homeproxy
 #sed -i "s#HomeProxy#家庭代理#g" luci-app-homeproxy/root/usr/share/luci/menu.d/luci-app-homeproxy.json
 git clone --depth 1 https://github.com/vernesong/OpenClash && mv -n OpenClash/luci-app-openclash ./; rm -rf OpenClash
@@ -65,8 +65,8 @@ git clone --depth 1 https://github.com/lisaac/luci-app-diskman diskman && mv -n 
 #sbwml for nft
 #*git clone --depth 1 https://github.com/sbwml/luci-app-dockerman
 ##git clone --depth 1 https://github.com/gitbruc/luci-app-dockerman
-git clone --depth 1 https://github.com/sirpdboy/luci-app-dockerman dockerman1 && mv -n dockerman1/luci-app-dockerman ./; rm -rf dockerman1
-git clone --depth 1 https://github.com/lisaac/luci-lib-docker libdocker && mv -n libdocker/collections/luci-lib-docker ./; rm -rf libdocker
+#!git clone --depth 1 https://github.com/sirpdboy/luci-app-dockerman dockerman1 && mv -n dockerman1/luci-app-dockerman ./; rm -rf dockerman1
+#!git clone --depth 1 https://github.com/lisaac/luci-lib-docker libdocker && mv -n libdocker/collections/luci-lib-docker ./; rm -rf libdocker
 ##git clone --depth 1 https://github.com/sbwml/luci-theme-argon argon1 && mv -n argon1/luci-theme-argon ./; rm -rf argon1
 ##sed -i '23d' luci-theme-argon/luasrc/view/themes/argon/footer.htm
 ##sed -i '23d' luci-theme-argon/luasrc/view/themes/argon/footer_login.htm
@@ -98,6 +98,7 @@ git clone --depth 1 https://github.com/pymumu/luci-app-smartdns
 sed -i '1711,1734d' luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js
 #git clone --depth 1 https://github.com/yichya/luci-app-xray
 git clone --depth 1 https://github.com/liudf0716/luci-app-xfrpc
+git clone -b dev --depth 1 https://github.com/justice2001/luci-app-multi-frpc
 git clone --depth 1 https://github.com/lmq8267/luci-app-caddy caddy1 && mv -n caddy1/luci-app-caddy ./; rm -rf caddy1
 git clone --depth 1 https://github.com/lmq8267/luci-app-cloudflared cloudflared1 && mv -n cloudflared1/luci-app-cloudflared ./; rm -rf cloudflared1
 #git clone --depth 1 https://github.com/lmq8267/luci-app-easytier easytier1 && mv -n easytier1/*easytier ./; rm -rf easytier1
@@ -171,8 +172,8 @@ git clone --depth 1 https://github.com/QiuSimons/openwrt-natflow natflow1 && mv 
 #git clone --depth 1 https://github.com/QiuSimons/luci-app-dae dae1 && mv -n dae1/*dae ./; rm -rf dae1
 #git clone --depth 1 https://github.com/QiuSimons/luci-app-daed daed1 && mv -n daed1/*daed ./; rm -rf daed1
 git clone --depth 1 https://github.com/sudo-bai/luci-app-cloud-control cloud-control1 && mv -n cloud-control1/*cloud-control ./; rm -rf cloud-control1
-git clone --depth 1 https://github.com/EkkoG/openwrt-natmap natmap
-git clone --depth 1 https://github.com/EkkoG/luci-app-natmap
+#!git clone --depth 1 https://github.com/EkkoG/openwrt-natmap natmap
+#!git clone --depth 1 https://github.com/EkkoG/luci-app-natmap
 git clone --depth 1 https://github.com/muink/openwrt-natmapt natmapt
 git clone --depth 1 https://github.com/muink/luci-app-natmapt
 git clone --depth 1 https://github.com/muink/openwrt-stuntman stuntman
@@ -257,24 +258,23 @@ git clone --depth 1 https://github.com/hzy306016819/luci-app-backup
 git clone --depth 1 https://github.com/0x5826/luci-app-flowproxy flowproxy1 && mv -n flowproxy1/*flowproxy ./; rm -rf flowproxy1
 git clone --depth 1 https://github.com/jlzsss/luci-app-sxray
 
-git_sparse_clone openwrt-24.10 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
-git_sparse_clone openwrt-24.10 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
+git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
+git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
 sed -i 's/system/services/g' luci-app-autoreboot/root/usr/share/luci/menu.d/luci-app-autoreboot.json
-git_sparse_clone openwrt-24.10 "https://github.com/openwrt/packages" "24packages" net/curl
+#!git_sparse_clone openwrt-24.10 "https://github.com/openwrt/packages" "24packages" net/curl
 sed -i 's/default LIBCURL_MBEDTLS/default LIBCURL_OPENSSL/g' curl/Config.in
 sed -i 's/title": "daed/title": "DAED/g' luci-app-daed\/root/usr/share/luci/menu.d/luci-app-daed\.json
 #git_sparse_clone openwrt-24.10 "https://github.com/openwrt/luci" "24luci" modules/luci-lua-runtime
-git_sparse_clone master "https://github.com/coolsnowwolf/packages" "ledepack" net/frp
-git_sparse_clone master "https://github.com/coolsnowwolf/luci" "ledeluci" applications/luci-app-frpc applications/luci-app-frps
-sed -i 's/Frp Setting/Frpc/g' luci-app-frpc/luasrc/controller/frp.lua
-sed -i 's#internet.*#internet.")#g' luci-app-frps/luasrc/model/cbi/frps/common.lua
-sed -i 's#internet.*#internet."#g' luci-app-frps/po/zh-cn/frps.po
+#!git_sparse_clone master "https://github.com/coolsnowwolf/packages" "ledepack" net/frp
+#!git_sparse_clone master "https://github.com/coolsnowwolf/luci" "ledeluci" applications/luci-app-frpc applications/luci-app-frps
+#!sed -i 's/Frp Setting/Frpc/g' luci-app-frpc/luasrc/controller/frp.lua
+#!sed -i 's#internet.*#internet.")#g' luci-app-frps/luasrc/model/cbi/frps/common.lua
+#!sed -i 's#internet.*#internet."#g' luci-app-frps/po/zh-cn/frps.po
 #sed -i "s#<br/><a href=\"https://github.com/fatedier/frp\" target=\"_blank\">Github 项目地址</a>##g" luci-app-frps/po/zh-cn/frps.po
 #git_sparse_clone other "https://github.com/Lienol/openwrt-package" "lienolother" lean/luci-app-autoreboot
 #sed -i 's/system/services/g' luci-app-autoreboot/luasrc/controller/autoreboot.lua
 #git_sparse_clone main "https://github.com/Lienol/openwrt-package" "lienol" luci-app-socat
 #git_sparse_clone main "https://github.com/kenzok8/small-package/" "kenzok8" adguardhome luci-app-adguardhome
-git clone -b dev --depth 1 https://github.com/justice2001/luci-app-multi-frpc
 
 sed -i \
 -e 's?include \.\./\.\./\(lang\|devel\|net\|utils\)?include $(TOPDIR)/feeds/packages/\1?' \
