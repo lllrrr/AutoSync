@@ -262,7 +262,7 @@ git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpac
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
 sed -i 's/system/services/g' luci-app-autoreboot/root/usr/share/luci/menu.d/luci-app-autoreboot.json
 #!git_sparse_clone openwrt-24.10 "https://github.com/openwrt/packages" "24packages" net/curl
-sed -i 's/default LIBCURL_MBEDTLS/default LIBCURL_OPENSSL/g' curl/Config.in
+#!sed -i 's/default LIBCURL_MBEDTLS/default LIBCURL_OPENSSL/g' curl/Config.in
 sed -i 's/title": "daed/title": "DAED/g' luci-app-daed\/root/usr/share/luci/menu.d/luci-app-daed\.json
 #git_sparse_clone openwrt-24.10 "https://github.com/openwrt/luci" "24luci" modules/luci-lua-runtime
 #!git_sparse_clone master "https://github.com/coolsnowwolf/packages" "ledepack" net/frp
