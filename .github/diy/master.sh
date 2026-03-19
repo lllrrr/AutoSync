@@ -187,7 +187,8 @@ git clone --depth 1 https://github.com/gSpotx2f/luci-app-cpu-perf
 git clone --depth 1 https://github.com/gSpotx2f/luci-app-cpu-status
 git clone --depth 1 https://github.com/gSpotx2f/luci-app-cpu-status-mini
 git clone --depth 1 https://github.com/gSpotx2f/luci-app-disks-info
-git clone --depth 1 https://github.com/gSpotx2f/luci-app-internet-detector internet-detector1 && mv -n internet-detector1/*internet-detector* ./; rm -rf internet-detector1
+#git clone --depth 1 https://github.com/gSpotx2f/luci-app-internet-detector internet-detector1 && mv -n internet-detector1/*internet-detector* ./; rm -rf internet-detector1
+git clone --depth 1 https://github.com/waynesg/luci-app-internet-detector internet-detector1 && mv -n internet-detector1/*internet-detector* ./; rm -rf internet-detector1
 git clone --depth 1 https://github.com/gSpotx2f/luci-app-interfaces-statistics
 git clone --depth 1 https://github.com/gSpotx2f/luci-app-temp-status
 git clone --depth 1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
@@ -232,6 +233,7 @@ git clone --depth 1 https://github.com/animegasan/luci-app-ipinfo
 git clone --depth 1 https://github.com/animegasan/luci-app-dnsleaktest
 git clone --depth 1 https://github.com/alrescha79-cmd/luci-app-ipinfo-mod
 git clone --depth 1 https://github.com/chenmozhijin/luci-app-socat socat1 && mv -n socat1/luci-app-socat ./; rm -rf socat1
+#clone --depth 1 https://github.com/mylucien/luci-app-socat
 git clone --depth 1 https://github.com/aurelius1688/luci-app-hardware-monitor hardware-monitor1 && mv -n hardware-monitor1/luci-app-hardware-monitor ./; rm -rf hardware-monitor1
 git clone --depth 1 https://github.com/niki-no/luci-app-mydomain mydomain1 && mv -n mydomain1/luci-app-mydomain ./; rm -rf mydomain1
 git clone --depth 1 https://github.com/LazuliKao/luci-app-portweaver portweaver1 && mv -n portweaver1/*portweaver ./; rm -rf portweaver1
@@ -257,6 +259,7 @@ git clone --depth 1 https://github.com/pengcong226/luci-app-easy-mwan3
 git clone --depth 1 https://github.com/hzy306016819/luci-app-backup
 git clone --depth 1 https://github.com/0x5826/luci-app-flowproxy flowproxy1 && mv -n flowproxy1/*flowproxy ./; rm -rf flowproxy1
 git clone --depth 1 https://github.com/jlzsss/luci-app-sxray
+git clone --depth 1 https://github.com/marinierb/luci-app-connected connected1 && mv -n connected1/*connected ./; rm -rf connected1
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
