@@ -63,7 +63,7 @@ git clone --depth 1 https://github.com/lisaac/luci-app-diskman diskman && mv -n 
 #sed -i '21,22d' luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua
 #sed -i '/auto_start/d' luci-app-dockerman/root/etc/uci-defaults/luci-app-dockerman
 #sbwml for nft
-git clone -b openwrt-24.10 --depth 1 https://github.com/sbwml/luci-app-dockerman
+git clone -b openwrt-25.12 --depth 1 https://github.com/sbwml/luci-app-dockerman
 ##git clone --depth 1 https://github.com/gitbruc/luci-app-dockerman
 #!git clone --depth 1 https://github.com/sirpdboy/luci-app-dockerman dockerman1 && mv -n dockerman1/luci-app-dockerman ./; rm -rf dockerman1
 #!git clone --depth 1 https://github.com/lisaac/luci-lib-docker libdocker && mv -n libdocker/collections/luci-lib-docker ./; rm -rf libdocker
