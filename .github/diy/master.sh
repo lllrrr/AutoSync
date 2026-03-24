@@ -262,6 +262,7 @@ git clone --depth 1 https://github.com/0x5826/luci-app-flowproxy flowproxy1 && m
 git clone --depth 1 https://github.com/jlzsss/luci-app-sxray
 git clone --depth 1 https://github.com/marinierb/luci-app-connected connected1 && mv -n connected1/*connected ./; rm -rf connected1
 git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2 vnt2 && mv -n vnt2/*vnt2 ./; rm -rf vnt2
+git clone --depth 1 https://github.com/hellodk34/luci-app-pasteanytext
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
