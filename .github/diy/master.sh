@@ -44,7 +44,7 @@ git clone --depth 1 https://github.com/sbwml/luci-app-quickfile quickfile1 && mv
 git clone --depth 1 https://github.com/sbwml/luci-app-ramfree
 git clone --depth 1 https://github.com/sbwml/luci-app-smbuser
 git clone --depth 1 https://github.com/sbwml/luci-app-webdav
-git clone -b 25.x --depth 1 https://github.com/sbwml/packages_lang_golang golang
+git clone -b 26.x --depth 1 https://github.com/sbwml/packages_lang_golang golang
 #sed -i "s#GO_VERSION_PATCH:=6#GO_VERSION_PATCH:=7#g" golang/golang/Makefile
 #sed -i "s#58cbf771e44d76de6f56d19e33b77d745a1e489340922875e46585b975c2b059#178f2832820274b43e177d32f06a3ebb0129e427dd20a5e4c88df2c1763cf10a#g" golang/golang/Makefile
 #!git clone --depth 1 https://github.com/sbwml/packages_utils_containerd containerd
