@@ -253,6 +253,7 @@ git clone --depth 1 https://github.com/MayflyDestiny/luci-app-mosdns-panel mosdn
 #git clone --depth 1 https://github.com/zouzonghao/luci-app-dufs
 git clone --depth 1 https://github.com/findnr/findnr-feeds findnr1 && mv -n findnr1/{luci-*,cymfrp} ./; rm -rf findnr1
 git clone --depth 1 https://github.com/LIKE2000-ART/luci-app-picoclaw picoclaw1 && mv -n picoclaw1/*picoclaw ./; rm -rf picoclaw1
+#git clone --depth 1 https://github.com/GennKann/luci-app-picoclaw picoclaw1 && mv -n picoclaw1/*picoclaw ./; rm -rf picoclaw1
 git clone --depth 1 https://github.com/10000ge10000/luci-app-openclaw
 git clone --depth 1 https://github.com/jimmyk1m/luci-app-autoredial
 git clone --depth 1 https://github.com/Zesuy/luci-app-multi-login
@@ -263,6 +264,7 @@ git clone --depth 1 https://github.com/jlzsss/luci-app-sxray
 git clone --depth 1 https://github.com/marinierb/luci-app-connected connected1 && mv -n connected1/*connected ./; rm -rf connected1
 git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2 vnt2 && mv -n vnt2/*vnt2 ./; rm -rf vnt2
 git clone --depth 1 https://github.com/hellodk34/luci-app-pasteanytext
+git clone --depth 1 https://github.com/luunarrr/luci-app-hysteria
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
