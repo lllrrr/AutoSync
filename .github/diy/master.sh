@@ -28,13 +28,14 @@ sed -i "s#<br /><br />If you encounter any issues while using it, please submit 
 sed -i "s#<br /><br />如果你在使用中遇到问题，请到这里提交：##g" luci-app-wechatpush/po/zh_Hans/wechatpush.po
 sed -i 's/ OpenWrt 上/设备上/g' luci-app-wechatpush/po/zh_Hans/wechatpush.po
 #git clone -b openwrt-18.06 --depth 1 https://github.com/tty228/luci-app-wechatpush luci-app-serverchan
-git clone --depth 1 https://github.com/gaoyaxuan/luci-app-pushbot
+git clone --depth 1 https://github.com/zzsj0928/luci-app-pushbot
+#git clone --depth 1 https://github.com/gaoyaxuan/luci-app-pushbot
 git clone --depth 1 https://github.com/sbwml/luci-app-airconnect airconnect1 && mv -n airconnect1/*airconnect ./; rm -rf airconnect1
 #git clone --depth 1 https://github.com/CC13594759/luci-app-airconnect airconnect1 && mv -n airconnect1/*airconnect ./; rm -rf airconnect1 lua版本
 #git clone --depth 1 https://github.com/sbwml/luci-app-alist alist1 && mv -n alist1/*alist ./; rm -rf alist1
 git clone --depth 1 https://github.com/sbwml/luci-app-openlist2 openlist1 && mv -n openlist1/*openlist2 ./; rm -rf openlist1
 #git clone --depth 1 https://github.com/lmq8267/luci-app-alist alist1 && mv -n alist1/*alist ./; rm -rf alist1
-git clone --depth 1 https://github.com/sbwml/luci-app-filemanager
+#git clone --depth 1 https://github.com/sbwml/luci-app-filemanager
 #git clone --depth 1 https://github.com/QiuSimons/openwrt-mos && mv -n openwrt-mos/luci-app-mosdns ./ ; rm -rf openwrt-mos
 git clone --depth 1 https://github.com/sbwml/luci-app-mentohust mentohust1 && mv -n mentohust1/*mentohust ./; rm -rf mentohust1
 git clone --depth 1 https://github.com/sbwml/luci-app-mosdns openwrt-mos && mv -n openwrt-mos/{*mosdns,v2dat} ./; rm -rf openwrt-mos
@@ -98,7 +99,7 @@ git clone --depth 1 https://github.com/pymumu/openwrt-smartdns smartdns
 git clone --depth 1 https://github.com/pymumu/luci-app-smartdns
 sed -i '1711,1734d' luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js
 #git clone --depth 1 https://github.com/yichya/luci-app-xray
-git clone --depth 1 https://github.com/liudf0716/luci-app-xfrpc
+#git clone --depth 1 https://github.com/liudf0716/luci-app-xfrpc
 git clone -b dev --depth 1 https://github.com/justice2001/luci-app-multi-frpc
 git clone --depth 1 https://github.com/lmq8267/luci-app-caddy caddy1 && mv -n caddy1/luci-app-caddy ./; rm -rf caddy1
 git clone --depth 1 https://github.com/lmq8267/luci-app-cloudflared cloudflared1 && mv -n cloudflared1/luci-app-cloudflared ./; rm -rf cloudflared1
@@ -131,7 +132,7 @@ rm -rf luci-app-ddns-go/root/etc/config
 #sed -i '222,231d' luci-app-ddns-go/htdocs/luci-static/resources/view/ddns-go/log.js
 git clone --depth 1 https://github.com/sirpdboy/luci-app-eqosplus
 sed -i 's#..translate("Suggested feedback:.*##g' luci-app-eqosplus/luasrc/model/cbi/eqosplus.lua
-git clone --depth 1 https://github.com/sirpdboy/luci-app-netdata
+git clone --depth 1 https://github.com/sirpdboy/luci-app-netdata netdata1 && mv -n netdata1/luci-app-netdata ./; rm -rf netdata1
 git clone --depth 1 https://github.com/sirpdboy/luci-app-netwizard netwizard1 && mv -n netwizard1/luci-app-netwizard ./; rm -rf netwizard1
 #sed -i 's#..translate("For specific usage,.*# )#g' luci-app-netwizard/luasrc/model/cbi/netwizard/netwizard.lua
 git clone --depth 1 https://github.com/sirpdboy/netspeedtest netspeedtest1 && mv -n netspeedtest1/{*speedtest*,homebox} ./; rm -rf netspeedtest1
