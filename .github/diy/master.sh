@@ -266,6 +266,7 @@ git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2 vnt2 && mv -n 
 git clone --depth 1 https://github.com/hellodk34/luci-app-pasteanytext
 git clone --depth 1 https://github.com/luunarrr/luci-app-hysteria
 git clone --depth 1 https://github.com/letmebe/luci-app-block-host
+git clone --depth 1 https://github.com/nooblk-98/luci-app-netstat
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
