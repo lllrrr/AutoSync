@@ -234,7 +234,7 @@ git clone --depth 1 https://github.com/esirplayground/luci-app-poweroff
 git clone --depth 1 https://github.com/animegasan/luci-app-ipinfo
 git clone --depth 1 https://github.com/animegasan/luci-app-dnsleaktest
 git clone --depth 1 https://github.com/alrescha79-cmd/luci-app-ipinfo-mod
-git clone --depth 1 https://github.com/chenmozhijin/luci-app-socat socat1 && mv -n socat1/luci-app-socat ./; rm -rf socat1
+#git clone --depth 1 https://github.com/chenmozhijin/luci-app-socat socat1 && mv -n socat1/luci-app-socat ./; rm -rf socat1
 #clone --depth 1 https://github.com/mylucien/luci-app-socat
 git clone --depth 1 https://github.com/aurelius1688/luci-app-hardware-monitor hardware-monitor1 && mv -n hardware-monitor1/luci-app-hardware-monitor ./; rm -rf hardware-monitor1
 git clone --depth 1 https://github.com/niki-no/luci-app-mydomain mydomain1 && mv -n mydomain1/luci-app-mydomain ./; rm -rf mydomain1
@@ -269,6 +269,7 @@ git clone --depth 1 https://github.com/luunarrr/luci-app-hysteria
 git clone --depth 1 https://github.com/letmebe/luci-app-block-host
 git clone --depth 1 https://github.com/nooblk-98/luci-app-netstat
 
+git_sparse_clone "https://github.com/sbwml/openwrt_pkgs" "sbwmlpack" luci-app-ota luci-app-socat
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
 sed -i 's/system/services/g' luci-app-autoreboot/root/usr/share/luci/menu.d/luci-app-autoreboot.json
