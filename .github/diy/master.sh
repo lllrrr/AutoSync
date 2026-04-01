@@ -52,6 +52,7 @@ git clone -b 26.x --depth 1 https://github.com/sbwml/packages_lang_golang golang
 #!git clone --depth 1 https://github.com/sbwml/packages_utils_docker docker
 #!git clone --depth 1 https://github.com/sbwml/packages_utils_dockerd dockerd
 #!git clone --depth 1 https://github.com/sbwml/packages_utils_runc runc
+git clone --depth 1 https://github.com/sbwml/openwrt_pkgs sbwmlpack && mv -n sbwmlpack/{luci-app-ota,luci-app-socat} ./; rm -rf sbwmlpack
 git clone --depth 1 https://github.com/immortalwrt/homeproxy luci-app-homeproxy
 #sed -i "s#HomeProxy#家庭代理#g" luci-app-homeproxy/root/usr/share/luci/menu.d/luci-app-homeproxy.json
 git clone --depth 1 https://github.com/vernesong/OpenClash && mv -n OpenClash/luci-app-openclash ./; rm -rf OpenClash
@@ -260,7 +261,7 @@ git clone --depth 1 https://github.com/jimmyk1m/luci-app-autoredial
 git clone --depth 1 https://github.com/Zesuy/luci-app-multi-login
 git clone --depth 1 https://github.com/pengcong226/luci-app-easy-mwan3
 git clone --depth 1 https://github.com/hzy306016819/luci-app-backup
-git clone --depth 1 https://github.com/0x5826/luci-app-flowproxy flowproxy1 && mv -n flowproxy1/*flowproxy ./; rm -rf flowproxy1
+#git clone --depth 1 https://github.com/0x5826/luci-app-flowproxy flowproxy1 && mv -n flowproxy1/*flowproxy ./; rm -rf flowproxy1
 git clone --depth 1 https://github.com/jlzsss/luci-app-sxray
 git clone --depth 1 https://github.com/marinierb/luci-app-connected connected1 && mv -n connected1/*connected ./; rm -rf connected1
 git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2 vnt2 && mv -n vnt2/*vnt2 ./; rm -rf vnt2
@@ -269,7 +270,6 @@ git clone --depth 1 https://github.com/luunarrr/luci-app-hysteria
 git clone --depth 1 https://github.com/letmebe/luci-app-block-host
 git clone --depth 1 https://github.com/nooblk-98/luci-app-netstat
 
-git_sparse_clone "https://github.com/sbwml/openwrt_pkgs" "sbwmlpack" luci-app-ota luci-app-socat
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
 sed -i 's/system/services/g' luci-app-autoreboot/root/usr/share/luci/menu.d/luci-app-autoreboot.json
