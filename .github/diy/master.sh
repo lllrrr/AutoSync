@@ -198,6 +198,7 @@ git clone --depth 1 https://github.com/UnblockNeteaseMusic/luci-app-unblocknetea
 sed -i "s#<br/>' +#'));#g" luci-app-unblockneteasemusic/htdocs/luci-static/resources/view/unblockneteasemusic/config.js
 sed -i '77d' luci-app-unblockneteasemusic/htdocs/luci-static/resources/view/unblockneteasemusic/config.js
 sed -i "s#解除网易云音乐播放限制#网易云解锁#g" luci-app-unblockneteasemusic/root/usr/share/luci/menu.d/luci-app-unblockneteasemusic.json
+git clone --depth 1 https://github.com/Mark2T/luci-app-unblockneteasemusic-gdstudio
 git clone --depth 1 https://github.com/brvphoenix/wrtbwmon wrtbwmon1 && mv -n wrtbwmon1/wrtbwmon ./; rm -rf wrtbwmon1
 git clone --depth 1 https://github.com/brvphoenix/luci-app-wrtbwmon openwrt-wrtbwmon1 && mv -n openwrt-wrtbwmon1/luci-app-wrtbwmon ./; rm -rf openwrt-wrtbwmon1
 #git clone --depth 1 https://github.com/gitbruc/openwrt-wrtbwmon openwrt-wrtbwmon1 && mv -n openwrt-wrtbwmon1/*wrtbwmon ./; rm -rf openwrt-wrtbwmon1
@@ -257,6 +258,7 @@ git clone --depth 1 https://github.com/findnr/findnr-feeds findnr1 && mv -n find
 git clone --depth 1 https://github.com/LIKE2000-ART/luci-app-picoclaw picoclaw1 && mv -n picoclaw1/*picoclaw ./; rm -rf picoclaw1
 #git clone --depth 1 https://github.com/GennKann/luci-app-picoclaw picoclaw1 && mv -n picoclaw1/*picoclaw ./; rm -rf picoclaw1
 git clone --depth 1 https://github.com/10000ge10000/luci-app-openclaw
+git clone --depth 1 https://github.com/a10463981/luci-app-clawpanel
 git clone --depth 1 https://github.com/jimmyk1m/luci-app-autoredial
 git clone --depth 1 https://github.com/Zesuy/luci-app-multi-login
 git clone --depth 1 https://github.com/pengcong226/luci-app-easy-mwan3
@@ -269,6 +271,8 @@ git clone --depth 1 https://github.com/hellodk34/luci-app-pasteanytext
 git clone --depth 1 https://github.com/luunarrr/luci-app-hysteria
 git clone --depth 1 https://github.com/letmebe/luci-app-block-host
 git clone --depth 1 https://github.com/nooblk-98/luci-app-netstat
+git clone --depth 1 https://github.com/kinmeic/luci-app-naived
+git clone --depth 1 https://github.com/kenzok78/luci-app-clashoo
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
