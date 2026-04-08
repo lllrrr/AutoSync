@@ -53,6 +53,7 @@ git clone -b 26.x --depth 1 https://github.com/sbwml/packages_lang_golang golang
 #!git clone --depth 1 https://github.com/sbwml/packages_utils_dockerd dockerd
 #!git clone --depth 1 https://github.com/sbwml/packages_utils_runc runc
 git clone --depth 1 https://github.com/sbwml/openwrt_pkgs sbwmlpack && mv -n sbwmlpack/{luci-app-ota,luci-app-socat,otahelper} ./; rm -rf sbwmlpack
+sed -i 's/services/network/g' luci-app-socat/root/usr/share/luci/menu.d/luci-app-socat.json
 git clone --depth 1 https://github.com/immortalwrt/homeproxy luci-app-homeproxy
 #sed -i "s#HomeProxy#家庭代理#g" luci-app-homeproxy/root/usr/share/luci/menu.d/luci-app-homeproxy.json
 git clone --depth 1 https://github.com/vernesong/OpenClash && mv -n OpenClash/luci-app-openclash ./; rm -rf OpenClash
