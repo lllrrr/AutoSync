@@ -135,6 +135,7 @@ rm -rf luci-app-ddns-go/root/etc/config
 git clone --depth 1 https://github.com/sirpdboy/luci-app-eqosplus
 sed -i 's#..translate("Suggested feedback:.*##g' luci-app-eqosplus/luasrc/model/cbi/eqosplus.lua
 git clone --depth 1 https://github.com/sirpdboy/luci-app-netdata netdata1 && mv -n netdata1/luci-app-netdata ./; rm -rf netdata1
+git clone --depth 1 https://github.com/huchd0/luci-app-netwiz netwiz1 && mv -n netwiz1/luci-app-netwiz ./; rm -rf netwiz1
 git clone --depth 1 https://github.com/sirpdboy/luci-app-netwizard netwizard1 && mv -n netwizard1/luci-app-netwizard ./; rm -rf netwizard1
 #sed -i 's#..translate("For specific usage,.*# )#g' luci-app-netwizard/luasrc/model/cbi/netwizard/netwizard.lua
 git clone --depth 1 https://github.com/sirpdboy/netspeedtest netspeedtest1 && mv -n netspeedtest1/{*speedtest*,homebox} ./; rm -rf netspeedtest1
