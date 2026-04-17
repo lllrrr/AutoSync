@@ -277,6 +277,7 @@ git clone --depth 1 https://github.com/kinmeic/luci-app-naived
 git clone --depth 1 https://github.com/kenzok8/openwrt-clashoo clashoo1 && mv -n clashoo1/*clashoo ./; rm -rf clashoo1
 git clone --depth 1 https://github.com/tpxcer/luci-app-minigate
 git clone --depth 1 https://github.com/debugdoctor/luci-app-chinesecalendar
+git clone --depth 1 https://github.com/qsyqn1/luci-app-onlineupgrade
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
