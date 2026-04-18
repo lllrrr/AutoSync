@@ -107,7 +107,7 @@ git clone --depth 1 https://github.com/lmq8267/luci-app-caddy caddy1 && mv -n ca
 git clone --depth 1 https://github.com/lmq8267/luci-app-cloudflared cloudflared1 && mv -n cloudflared1/luci-app-cloudflared ./; rm -rf cloudflared1
 #git clone --depth 1 https://github.com/lmq8267/luci-app-easytier easytier1 && mv -n easytier1/*easytier ./; rm -rf easytier1
 git clone --depth 1 https://github.com/EasyTier/luci-app-easytier easytier1 && mv -n easytier1/*easytier ./; rm -rf easytier1
-sed -i '5,9d' luci-app-easytier/luasrc/model/cbi/easytier.lua
+#sed -i '5,9d' luci-app-easytier/luasrc/model/cbi/easytier.lua
 git clone --depth 1 https://github.com/lmq8267/luci-app-vnt vnt1 && mv -n vnt1/*vnt* ./; rm -rf vnt1
 sed -i '5d' luci-app-vnt/luasrc/model/cbi/vnt.lua
 #git clone --depth 1 https://github.com/whzhni1/luci-app-vnt vnt2 && mv -n vnt2/*vnt* ./; rm -rf vnt2
