@@ -113,6 +113,7 @@ git clone --depth 1 https://github.com/EasyTier/luci-app-easytier easytier1 && m
 git clone --depth 1 https://github.com/lmq8267/luci-app-vnt vnt1 && mv -n vnt1/*vnt* ./; rm -rf vnt1
 sed -i '5d' luci-app-vnt/luasrc/model/cbi/vnt.lua
 #git clone --depth 1 https://github.com/whzhni1/luci-app-vnt vnt2 && mv -n vnt2/*vnt* ./; rm -rf vnt2
+git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2 vnt2 && mv -n vnt2/*vnt2 ./; rm -rf vnt2
 git clone --depth 1 https://github.com/sirpdboy/luci-app-taskplan taskplan1 && mv -n taskplan1/luci-app-taskplan ./; rm -rf taskplan1
 #git clone --depth 1 https://github.com/sirpdboy/luci-app-timecontrol timecontrol1 && mv -n timecontrol1/luci-app-timecontrol ./; rm -rf timecontrol1
 #sed -i 's#..translate("Suggested feedback:.*##g' luci-app-timecontrol/luasrc/model/cbi/timecontrol.lua
@@ -270,7 +271,6 @@ git clone --depth 1 https://github.com/hzy306016819/luci-app-backup
 #git clone --depth 1 https://github.com/0x5826/luci-app-flowproxy flowproxy1 && mv -n flowproxy1/*flowproxy ./; rm -rf flowproxy1
 git clone --depth 1 https://github.com/jlzsss/luci-app-sxray
 git clone --depth 1 https://github.com/marinierb/luci-app-connected connected1 && mv -n connected1/*connected ./; rm -rf connected1
-git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2 vnt2 && mv -n vnt2/*vnt2 ./; rm -rf vnt2
 git clone --depth 1 https://github.com/hellodk34/luci-app-pasteanytext
 git clone --depth 1 https://github.com/luunarrr/luci-app-hysteria
 git clone --depth 1 https://github.com/letmebe/luci-app-block-host
