@@ -238,7 +238,7 @@ git clone --depth 1 https://github.com/timsaya/luci-app-bandix bandix2 && mv -n 
 #sed -i "s#Bandix DNS 监控#DNS 监控#g" luci-app-bandix/po/zh_Hans/bandix.po
 #sed -i "s#Bandix 连接监控#连接监控#g" luci-app-bandix/po/zh_Hans/bandix.po
 #sed -i "s#Bandix 流量监控#流量监控#g" luci-app-bandix/root/usr/share/luci/status/bandix.json
-#sed -i "s#Bandix#流量监控#g" luci-app-bandix/root/usr/share/luci/menu.d/luci-app-bandix.json
+sed -i "s#Bandix#流量监控#g" luci-app-bandix/root/usr/share/luci/menu.d/luci-app-bandix.json
 sed -i '634,642d' luci-app-bandix/htdocs/luci-static/resources/view/bandix/settings.js
 #sed -i '670,676d' luci-app-bandix/htdocs/luci-static/resources/view/bandix/settings.js
 git clone --depth 1 https://github.com/qianlyun123/luci-app-modem
