@@ -145,7 +145,7 @@ chmod +x luci-app-netwiz/root/usr/libexec/netwiz-monitor-loop.sh
 chmod +x luci-app-netwiz/root/etc/init.d/netwiz-monitor
 chmod +x luci-app-netwiz/root/etc/init.d/netwiz-recovery
 sed -i "s#Netwiz 网络设置向导#路由设置向导#g" luci-app-netwiz/po/zh_Hans/netwiz.po
-sed -i "s#网络设置向导#路由设置向导#g" luci-app-netwiz/po/zh_Hans/netwiz.po
+sed -i "s#网络向导#路由向导#g" luci-app-netwiz/po/zh_Hans/netwiz.po
 git clone --depth 1 https://github.com/sirpdboy/luci-app-netwizard netwizard1 && mv -n netwizard1/luci-app-netwizard ./; rm -rf netwizard1
 #sed -i 's#..translate("For specific usage,.*# )#g' luci-app-netwizard/luasrc/model/cbi/netwizard/netwizard.lua
 git clone --depth 1 https://github.com/sirpdboy/netspeedtest netspeedtest1 && mv -n netspeedtest1/{*speedtest*,homebox} ./; rm -rf netspeedtest1
