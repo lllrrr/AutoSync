@@ -6,7 +6,7 @@ on:
       - '.github/workflows/openwrt-packages.yml'
       - '.github/diy/master.sh'  
   schedule:
-    - cron: 59 0-23/2 * * *
+    - cron: 1 0-23/2 * * *
   repository_dispatch:
   workflow_dispatch:
     inputs:
