@@ -290,6 +290,7 @@ git clone --depth 1 https://github.com/tpxcer/luci-app-minigate
 git clone --depth 1 https://github.com/debugdoctor/luci-app-chinesecalendar
 git clone --depth 1 https://github.com/qsyqn1/luci-app-onlineupgrade
 git clone --depth 1 https://github.com/qaz69s/luci-app-panda panda1 && mv -n panda1/*panda ./; rm -rf panda1
+git clone --depth 1 https://github.com/qaz69s/https://github.com/qaz69s/OpenWrt-kiwi kiwi1 && mv -n kiwi1/*kiwi ./; rm -rf kiwi1
 git clone --depth 1 https://github.com/ssreekanth/luci-app-parentalcontrol
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
