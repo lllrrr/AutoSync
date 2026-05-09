@@ -140,6 +140,7 @@ sed -i 's#..translate("Suggested feedback:.*##g' luci-app-eqosplus/luasrc/model/
 git clone --depth 1 https://github.com/sirpdboy/luci-app-netdata netdata1 && mv -n netdata1/luci-app-netdata ./; rm -rf netdata1
 git clone --depth 1 https://github.com/huchd0/luci-app-netwiz netwiz1 && mv -n netwiz1/luci-app-netwiz ./; rm -rf netwiz1
 chmod +x luci-app-netwiz/root/usr/libexec/rpcd/netwiz
+chmod +x luci-app-netwiz/root/usr/libexec/rpcd/netwiz_dev
 chmod +x luci-app-netwiz/root/usr/libexec/netwiz-autodetect.sh
 chmod +x luci-app-netwiz/root/usr/libexec/netwiz-monitor-loop.sh
 chmod +x luci-app-netwiz/root/etc/init.d/netwiz-monitor
