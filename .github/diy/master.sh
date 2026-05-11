@@ -294,6 +294,12 @@ git clone --depth 1 https://github.com/qsyqn1/luci-app-onlineupgrade
 git clone --depth 1 https://github.com/qaz69s/luci-app-panda panda1 && mv -n panda1/*panda ./; rm -rf panda1
 git clone --depth 1 https://github.com/qaz69s/OpenWrt-kiwi kiwi1 && mv -n kiwi1/*kiwi ./; rm -rf kiwi1
 git clone --depth 1 https://github.com/ssreekanth/luci-app-parentalcontrol
+git clone --depth 1 https://github.com/weicaixian86/luci-app-pingpacket pingpacket1 && mv -n pingpacket1/*pingpacket ./; rm -rf pingpacket1
+git clone --depth 1 https://github.com/smallprogram/luci-app-ghfu ghfu1 && mv -n ghfu1/*ghfu ./; rm -rf ghfu1
+git clone --depth 1 https://github.com/qimaoww/luci-app-lanspeed lanspeed1 && mv -n lanspeed1/applications/luci-app-lanspeed lanspeed1/net/lanspeedd ./; rm -rf lanspeed1
+git clone --depth 1 https://github.com/Antecer/luci-app-devgate devgate1 && mv -n devgate1/*devgate ./; rm -rf devgate1
+git clone --depth 1 https://github.com/mokanove/luci-app-pm
+git clone --depth 1 https://github.com/Boos4721/luci-app-hermes
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
