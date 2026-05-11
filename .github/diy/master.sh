@@ -293,7 +293,7 @@ git clone --depth 1 https://github.com/debugdoctor/luci-app-chinesecalendar
 git clone --depth 1 https://github.com/qsyqn1/luci-app-onlineupgrade
 git clone --depth 1 https://github.com/qaz69s/luci-app-panda panda1 && mv -n panda1/*panda ./; rm -rf panda1
 git clone --depth 1 https://github.com/qaz69s/OpenWrt-kiwi kiwi1 && mv -n kiwi1/*kiwi ./; rm -rf kiwi1
-git clone --depth 1 https://github.com/ssreekanth/luci-app-parentalcontrol
+#git clone --depth 1 https://github.com/ssreekanth/luci-app-parentalcontrol
 git clone --depth 1 https://github.com/weicaixian86/luci-app-pingpacket pingpacket1 && mv -n pingpacket1/*pingpacket ./; rm -rf pingpacket1
 git clone --depth 1 https://github.com/smallprogram/luci-app-ghfu ghfu1 && mv -n ghfu1/*ghfu ./; rm -rf ghfu1
 git clone --depth 1 https://github.com/qimaoww/luci-app-lanspeed lanspeed1 && mv -n lanspeed1/applications/luci-app-lanspeed lanspeed1/net/lanspeedd ./; rm -rf lanspeed1
