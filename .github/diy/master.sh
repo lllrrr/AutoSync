@@ -145,6 +145,7 @@ chmod +x luci-app-netwiz/root/usr/libexec/netwiz-autodetect.sh
 chmod +x luci-app-netwiz/root/usr/libexec/netwiz-monitor-loop.sh
 chmod +x luci-app-netwiz/root/etc/init.d/netwiz-monitor
 chmod +x luci-app-netwiz/root/etc/init.d/netwiz-recovery
+chmod +x luci-app-netwiz/root/etc/hotplug.d/dhcp/99-netwiz-guard
 sed -i "s#Netwiz 网络设置向导#网络设置向导#g" luci-app-netwiz/po/zh_Hans/netwiz.po
 #sed -i "s#网络向导#路由向导#g" luci-app-netwiz/po/zh_Hans/netwiz.po
 git clone --depth 1 https://github.com/sirpdboy/luci-app-netwizard netwizard1 && mv -n netwizard1/luci-app-netwizard ./; rm -rf netwizard1
