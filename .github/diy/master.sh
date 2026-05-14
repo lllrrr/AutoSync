@@ -176,7 +176,8 @@ git clone --depth 1 https://github.com/sirpdboy/luci-theme-kucat
 git clone --depth 1 https://github.com/sirpdboy/luci-app-kucat-config
 git clone --depth 1 https://github.com/sirpdboy/luci-theme-opentopd
 #git clone --depth 1 https://github.com/asvow/luci-app-tailscale
-git clone --depth 1 https://github.com/Jaykwok2999/luci-app-tailscale tailscale1 && mv -n tailscale1/*tailscale ./; rm -rf tailscale1
+#git clone --depth 1 https://github.com/Jaykwok2999/luci-app-tailscale tailscale1 && mv -n tailscale1/*tailscale ./; rm -rf tailscale1
+git clone --depth 1 https://github.com/whzhni1/luci-app-tailscale tailscale1 && mv -n tailscale1/*tailscale ./; rm -rf tailscale1
 git clone --depth 1 https://github.com/Thaolga/openwrt-nekobox && mv -n openwrt-nekobox/luci-app-nekobox ./; rm -rf openwrt-nekobox
 #git clone --depth 1 https://github.com/fcshark-org/openwrt-fchomo mihomo1 && mv -n mihomo1/{mihomo,luci-app-fchomo} ./; rm -rf mihomo1
 git clone --depth 1 https://github.com/nikkinikki-org/OpenWrt-nikki && mv -n OpenWrt-nikki/*nikki ./; rm -rf OpenWrt-nikki
