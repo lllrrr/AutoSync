@@ -63,15 +63,15 @@ git clone --depth 1 https://github.com/vernesong/OpenClash && mv -n OpenClash/lu
 git clone --depth 1 https://github.com/destan19/OpenAppFilter && mvdir OpenAppFilter
 #sed -i '52,54d' luci-app-oaf/luasrc/model/cbi/appfilter/feature.lua
 git clone --depth 1 https://github.com/lisaac/luci-app-diskman diskman && mv -n diskman/applications/luci-app-diskman ./; rm -rf diskman
-git clone --depth 1 https://github.com/lisaac/luci-app-dockerman dockerman && mv -n dockerman/applications/luci-app-dockerman ./; rm -rf dockerman
+#git clone --depth 1 https://github.com/lisaac/luci-app-dockerman dockerman && mv -n dockerman/applications/luci-app-dockerman ./; rm -rf dockerman
 #sed -i 's/40)/45)/g' luci-app-dockerman/luasrc/controller/dockerman.lua
 #sed -i '21,22d' luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua
 #sed -i '/auto_start/d' luci-app-dockerman/root/etc/uci-defaults/luci-app-dockerman
 #sbwml for nft
-#git clone -b openwrt-24.10 --depth 1 https://github.com/sbwml/luci-app-dockerman
+git clone -b openwrt-24.10 --depth 1 https://github.com/sbwml/luci-app-dockerman
 ##git clone --depth 1 https://github.com/gitbruc/luci-app-dockerman
 #!git clone --depth 1 https://github.com/sirpdboy/luci-app-dockerman dockerman1 && mv -n dockerman1/luci-app-dockerman ./; rm -rf dockerman1
-git clone --depth 1 https://github.com/lisaac/luci-lib-docker libdocker && mv -n libdocker/collections/luci-lib-docker ./; rm -rf libdocker
+#git clone --depth 1 https://github.com/lisaac/luci-lib-docker libdocker && mv -n libdocker/collections/luci-lib-docker ./; rm -rf libdocker
 ##git clone --depth 1 https://github.com/sbwml/luci-theme-argon argon1 && mv -n argon1/luci-theme-argon ./; rm -rf argon1
 ##sed -i '23d' luci-theme-argon/luasrc/view/themes/argon/footer.htm
 ##sed -i '23d' luci-theme-argon/luasrc/view/themes/argon/footer_login.htm
