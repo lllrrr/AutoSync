@@ -21,7 +21,7 @@ sed -i "s/option start_delay '60'/option start_delay '5'/g" luci-app-passwall/ro
 git clone --depth 1 https://github.com/Openwrt-Passwall/openwrt-passwall2 && mv -n openwrt-passwall2/luci-app-passwall2 ./; rm -rf openwrt-passwall2
 #sed -i 's/msgid "PassWall 2"/msgid "通行证2"/g' luci-app-passwall2/po/zh-cn/passwall2.po
 git clone --depth 1 https://github.com/Openwrt-Passwall/openwrt-passwall-packages && mvdir openwrt-passwall-packages
-git clone --depth 1 https://github.com/fw876/helloworld && mv -n helloworld/{luci-app-ssr-plus,dns2socks-rust,dns2tcp,gn,lua-neturl,redsocks2,trojan} ./; rm -rf helloworld
+git clone --depth 1 https://github.com/fw876/helloworld && mv -n helloworld/{luci-app-ssr-plus,dns2socks-rust,dns2tcp,gn,lua-neturl,redsocks2} ./; rm -rf helloworld
 git clone --depth 1 https://github.com/tty228/luci-app-wechatpush
 sed -i "s#<br /><br />If you encounter any issues while using it, please submit them here.*#'));#g" luci-app-wechatpush/htdocs/luci-static/resources/view/wechatpush/config.js
 sed -i "s#<br /><br />If you encounter any issues while using it, please submit them here:##g" luci-app-wechatpush/po/zh_Hans/wechatpush.po
@@ -294,8 +294,8 @@ git clone --depth 1 https://github.com/tpxcer/luci-app-minigate
 git clone --depth 1 https://github.com/debugdoctor/luci-app-chinesecalendar
 git clone --depth 1 https://github.com/qsyqn1/luci-app-onlineupgrade
 #git clone --depth 1 https://github.com/qaz69s/luci-app-panda panda1 && mv -n panda1/*panda ./; rm -rf panda1
-git clone --depth 1 https://github.com/qaz69s/OpenWrt-kiwi kiwi1 && mv -n kiwi1/*kiwi ./; rm -rf kiwi1
-git_sparse_clone master "https://github.com/qaz69s/openwrt-build" "qazpack" package/komari package/luci-app-komari package/luci-app-panda package/luci-app-pi package/luci-app-sheep package/panda package/pi package/sheep
+#git clone --depth 1 https://github.com/qaz69s/OpenWrt-kiwi kiwi1 && mv -n kiwi1/*kiwi ./; rm -rf kiwi1
+#git_sparse_clone master "https://github.com/qaz69s/openwrt-build" "qazpack" package/komari package/luci-app-komari package/luci-app-panda package/luci-app-pi package/luci-app-sheep package/panda package/pi package/sheep
 git clone --depth 1 https://github.com/ssreekanth/luci-app-parentalcontrol
 git clone --depth 1 https://github.com/weicaixian86/luci-app-pingpacket pingpacket1 && mv -n pingpacket1/*pingpacket ./; rm -rf pingpacket1
 git clone --depth 1 https://github.com/smallprogram/luci-app-ghfu ghfu1 && mv -n ghfu1/*ghfu ./; rm -rf ghfu1
