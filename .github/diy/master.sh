@@ -307,6 +307,9 @@ git clone --depth 1 https://github.com/Boos4721/luci-app-hermes
 git_sparse_clone mian "https://github.com/small-white-rabbit/Wax206-Actions" "Wax206pack" wax206/packages/luci-app-devicemaster
 git clone --depth 1 https://github.com/ansun1714/luci-app-qmodem-failover
 git clone --depth 1 https://github.com/mia-clark/luci-app-frpc_frps-pro
+git clone --depth 1 https://github.com/zhete/luci-app-clientmanager
+git clone --depth 1 https://github.com/migee99/luci-app-clientstatus clientstatus1 && mv -n clientstatus1/*clientstatus ./; rm -rf clientstatus1
+git clone --depth 1 https://github.com/AoXIUy/luci-app-ipv6check
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
