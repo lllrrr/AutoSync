@@ -54,6 +54,9 @@ git clone -b 26.x --depth 1 https://github.com/sbwml/packages_lang_golang golang
 #!git clone --depth 1 https://github.com/sbwml/packages_utils_runc runc
 git clone --depth 1 https://github.com/sbwml/openwrt_pkgs sbwmlpack && mv -n sbwmlpack/{luci-app-socat,luci-app-ota,otahelper} ./; rm -rf sbwmlpack
 sed -i 's/services/network/g' luci-app-socat/root/usr/share/luci/menu.d/luci-app-socat.json
+#lua版本
+#git clone --depth 1 https://github.com/chenmozhijin/luci-app-socat socat1 && mv -n socat1/luci-app-socat ./; rm -rf socat1
+#git clone --depth 1 https://github.com/mylucien/luci-app-socat
 #需配合target/linux/bcm27xx/base-files/lib/upgrade/ota.sh
 #git clone --depth 1 https://github.com/istoreos/istoreos istoreos && mv -n istoreos/package/diy/luci-app-ota ./; rm -rf istoreos
 git clone --depth 1 https://github.com/immortalwrt/homeproxy luci-app-homeproxy
@@ -122,6 +125,7 @@ sed -i "s#IPv4/IPv6') + '<br/>' +#IPv4/IPv6'));#g" luci-app-timecontrol/htdocs/l
 #sed -i "229,230d" luci-app-timecontrol/htdocs/luci-static/resources/view/timecontrol/rules.js
 sed -i "501d" luci-app-timecontrol/htdocs/luci-static/resources/view/timecontrol/rules.js
 git clone --depth 1 https://github.com/sirpdboy/luci-app-adguardhome adguardhome1 && mv -n adguardhome1/luci-app-adguardhome ./; rm -rf adguardhome1
+#git clone --depth 1 https://github.com/rule2c/luci-app-timecontrol timecontrol3 && mv -n timecontrol3/luci-app-timecontrol ./; rm -rf timecontrol3
 #git clone --depth 1 https://github.com/rufengsuixing/luci-app-adguardhome adguardhome1 && mv -n adguardhome1/luci-app-adguardhome ./; rm -rf adguardhome1
 #git clone --depth 1 https://github.com/kenzok78/luci-app-adguardhome adguardhome1 && mv -n adguardhome1/luci-app-adguardhome ./; rm -rf adguardhome1
 #git clone --depth 1 https://github.com/xiaoxiao29/luci-app-adguardhome adguardhome2 && mv -n adguardhome2/{AdGuardHome,luci-app-adguardhome} ./; rm -rf adguardhome2
@@ -254,8 +258,6 @@ git clone --depth 1 https://github.com/esirplayground/luci-app-poweroff
 git clone --depth 1 https://github.com/animegasan/luci-app-ipinfo
 git clone --depth 1 https://github.com/animegasan/luci-app-dnsleaktest
 git clone --depth 1 https://github.com/alrescha79-cmd/luci-app-ipinfo-mod
-#git clone --depth 1 https://github.com/chenmozhijin/luci-app-socat socat1 && mv -n socat1/luci-app-socat ./; rm -rf socat1
-#clone --depth 1 https://github.com/mylucien/luci-app-socat
 git clone --depth 1 https://github.com/aurelius1688/luci-app-hardware-monitor hardware-monitor1 && mv -n hardware-monitor1/luci-app-hardware-monitor ./; rm -rf hardware-monitor1
 git clone --depth 1 https://github.com/niki-no/luci-app-mydomain mydomain1 && mv -n mydomain1/luci-app-mydomain ./; rm -rf mydomain1
 git clone --depth 1 https://github.com/LazuliKao/luci-app-portweaver portweaver1 && mv -n portweaver1/*portweaver ./; rm -rf portweaver1
@@ -310,9 +312,11 @@ git clone --depth 1 https://github.com/mia-clark/luci-app-frpc_frps-pro
 git clone --depth 1 https://github.com/zhete/luci-app-clientmanager
 git clone --depth 1 https://github.com/migee99/luci-app-clientstatus clientstatus1 && mv -n clientstatus1/*clientstatus ./; rm -rf clientstatus1
 git clone --depth 1 https://github.com/AoXIUy/luci-app-ipv6check
+git clone --depth 1 https://github.com/qimaoww/luci-app-qddns qddns1 && mv -n qddns1/applications/luci-app-qddns qddns1/net/qddns ./; rm -rf qddns1
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
-git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
+git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-n2n
+git clone --depth 1 https://github.com/kenzok78/luci-app-gost
 sed -i 's/system/services/g' luci-app-autoreboot/root/usr/share/luci/menu.d/luci-app-autoreboot.json
 git_sparse_clone openwrt-24.10 "https://github.com/openwrt/packages" "24packages" net/curl
 sed -i 's/default LIBCURL_MBEDTLS/default LIBCURL_OPENSSL/g' curl/Config.in
