@@ -308,7 +308,7 @@ git clone --depth 1 https://github.com/Boos4721/luci-app-hermes
 #git clone --depth 1 https://github.com/small-white-rabbit/luci-app-Devicemaster
 git_sparse_clone mian "https://github.com/small-white-rabbit/Wax206-Actions" "Wax206pack" wax206/packages/luci-app-devicemaster
 git clone --depth 1 https://github.com/ansun1714/luci-app-qmodem-failover
-git clone --depth 1 https://github.com/mia-clark/luci-app-frpc_frps-pro frp1 && mv -n frp1/luci-app-* ./; rm -rf frp1
+git clone --depth 1 https://github.com/mia-clark/luci-app-frp-mgr frp1 && mv -n frp1/luci-app-* ./; rm -rf frp1
 git clone --depth 1 https://github.com/zhete/luci-app-clientmanager
 git clone --depth 1 https://github.com/migee99/luci-app-clientstatus clientstatus1 && mv -n clientstatus1/*clientstatus ./; rm -rf clientstatus1
 git clone --depth 1 https://github.com/AoXIUy/luci-app-ipv6check
