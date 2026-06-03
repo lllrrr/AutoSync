@@ -94,7 +94,8 @@ git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config
 git clone --depth 1 https://github.com/eamonxg/luci-theme-aurora
 git clone --depth 1 https://github.com/eamonxg/luci-app-aurora-config
 git clone --depth 1 https://github.com/Beomjun/luci-theme-smart
-git_sparse_clone master "https://github.com/x-wrt/com.x-wrt" "x-wrt" luci-app-wizard luci-app-fakemesh
+git_sparse_clone master "https://github.com/x-wrt/com.x-wrt" "x-wrt" luci-app-fakemesh
+git clone --depth 1 https://github.com/yufanpin/luci-app-wizard
 #git clone --depth 1 https://github.com/kiddin9/luci-app-wizard
 #git_sparse_clone main "https://github.com/kiddin9/kwrt-packages" "kwrt-packages" luci-app-bypass
 git clone --depth 1 https://github.com/kiddin9/luci-app-dnsfilter
