@@ -79,9 +79,9 @@ git clone -b openwrt-24.10 --depth 1 https://github.com/sbwml/luci-app-dockerman
 ##sed -i '23d' luci-theme-argon/luasrc/view/themes/argon/footer.htm
 ##sed -i '23d' luci-theme-argon/luasrc/view/themes/argon/footer_login.htm
 #Jerry版本
-git clone -b v2.4.3 --depth 1 https://github.com/jerrykuku/luci-theme-argon
-sed -i '23,30d' luci-theme-argon/luasrc/view/themes/argon/footer.htm
-sed -i '24,25d' luci-theme-argon/luasrc/view/themes/argon/footer_login.htm
+git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon
+#sed -i '23,30d' luci-theme-argon/luasrc/view/themes/argon/footer.htm
+#sed -i '24,25d' luci-theme-argon/luasrc/view/themes/argon/footer_login.htm
 #@git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon
 #@sed -i '22,29d' luci-theme-argon/ucode/template/themes/argon/footer.ut
 #@sed -i "s#{{ version.disturl }}##g" luci-theme-argon/ucode/template/themes/argon/footer.ut
