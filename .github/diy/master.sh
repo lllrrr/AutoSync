@@ -110,6 +110,7 @@ sed -i '1711,1734d' luci-app-smartdns/htdocs/luci-static/resources/view/smartdns
 #git clone --depth 1 https://github.com/liudf0716/luci-app-xfrpc
 git clone -b dev --depth 1 https://github.com/justice2001/luci-app-multi-frpc
 git clone --depth 1 https://github.com/lmq8267/luci-app-caddy caddy1 && mv -n caddy1/luci-app-caddy ./; rm -rf caddy1
+sed -i 's/\(Web 服务器")\).*/\1)/' luci-app-caddy/luasrc/model/cbi/caddy/caddy.lua
 git clone --depth 1 https://github.com/lmq8267/luci-app-cloudflared cloudflared1 && mv -n cloudflared1/luci-app-cloudflared ./; rm -rf cloudflared1
 #git clone --depth 1 https://github.com/lmq8267/luci-app-easytier easytier1 && mv -n easytier1/*easytier ./; rm -rf easytier1
 git clone --depth 1 https://github.com/EasyTier/luci-app-easytier easytier1 && mv -n easytier1/*easytier ./; rm -rf easytier1
