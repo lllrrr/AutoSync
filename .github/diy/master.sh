@@ -317,7 +317,7 @@ git clone --depth 1 https://github.com/zhete/luci-app-clientmanager
 git clone --depth 1 https://github.com/migee99/luci-app-clientstatus clientstatus1 && mv -n clientstatus1/*clientstatus ./; rm -rf clientstatus1
 git clone --depth 1 https://github.com/AoXIUy/luci-app-ipv6check
 git clone --depth 1 https://github.com/qimaoww/luci-app-qddns qddns1 && mv -n qddns1/applications/luci-app-qddns qddns1/net/qddns ./; rm -rf qddns1
-git clone --depth 1 https://github.com/haixing1001/luci-app-singbox-server
+git clone --depth 1 https://github.com/haixing1001/luci-app-singbox-server singbox1 && mv -n singbox1/luci-app-singbox-server ./; rm -rf singbox1
 git clone --depth 1 https://github.com/BlueSky16st/luci-app-flowlens
 git clone --depth 1 https://github.com/home16668/luci-app-quickfile-go quickfile2 && mv -n quickfile2/luci-app-quickfile-go ./; rm -rf quickfile2
 
