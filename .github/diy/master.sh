@@ -329,6 +329,8 @@ git clone --depth 1 https://github.com/hello-yunshu/luci-app-upnp-nat-relay
 git clone --depth 1 https://github.com/svenshi/luci-app-oxidns
 git clone --depth 1 https://github.com/looong-cat/luci-app-netbird netbird1 && mv -n netbird1/*netbird ./; rm -rf netbird1
 git clone --depth 1 https://github.com/c2h2/luci-app-photondns photondns1 && mv -n photondns1/openwrt/*photondns* ./; rm -rf photondns1
+git clone --depth 1 https://github.com/luanmuc/luci-app-systools
+git clone --depth 1 https://github.com/1391959853/luci-app-usbmodem
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
