@@ -119,7 +119,7 @@ sed -i '5,10d' luci-app-easytier/luasrc/model/cbi/easytier_status.lua
 sed -i '679,692d' luci-app-easytier/luasrc/view/easytier/easytier_cli.htm
 git clone --depth 1 https://github.com/lmq8267/luci-app-vnt vnt1 && mv -n vnt1/*vnt* ./; rm -rf vnt1
 sed -i '5d' luci-app-vnt/luasrc/model/cbi/vnt.lua
-git clone --depth 1 https://github.com/whzhni1/luci-app-vnt vnt2 && mv -n vnt2/*vnt* ./; rm -rf vnt2
+#git clone --depth 1 https://github.com/whzhni1/luci-app-vnt vnt2 && mv -n vnt2/*vnt* ./; rm -rf vnt2
 #git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2 vnt2 && mv -n vnt2/*vnt2 ./; rm -rf vnt2
 git clone --depth 1 https://github.com/sirpdboy/luci-app-taskplan taskplan1 && mv -n taskplan1/luci-app-taskplan ./; rm -rf taskplan1
 #git clone --depth 1 https://github.com/sirpdboy/luci-app-timecontrol timecontrol1 && mv -n timecontrol1/luci-app-timecontrol ./; rm -rf timecontrol1
@@ -209,7 +209,7 @@ git clone --depth 1 https://github.com/muink/openwrt-rgmac rgmac
 git clone --depth 1 https://github.com/muink/luci-app-change-mac
 sed -i "s#MAC 地址随机化#MAC随机化#g" luci-app-change-mac/po/zh-cn/change-mac.po
 git clone --depth 1 https://github.com/newadev/luci-app-arcma arcma1 && mv -n arcma1/*arcma ./; rm -rf arcma1
-sed -i "s#自动 MAC 地址随机化#MAC随机化#g" luci-app-arcma/po/zh-cn/arcma.po
+#sed -i "s#自动 MAC 地址随机化#MAC随机化#g" luci-app-arcma/po/zh-Hans/arcma.po
 git clone --depth 1 https://github.com/muink/luci-app-tinyfilemanager
 git clone --depth 1 https://github.com/gSpotx2f/luci-app-cpu-perf
 git clone --depth 1 https://github.com/gSpotx2f/luci-app-cpu-status
@@ -314,7 +314,7 @@ git clone --depth 1 https://github.com/Boos4721/luci-app-hermes
 #git clone --depth 1 https://github.com/small-white-rabbit/luci-app-Devicemaster
 git_sparse_clone mian "https://github.com/small-white-rabbit/Wax206-Actions" "Wax206pack" wax206/packages/luci-app-devicemaster
 #git clone --depth 1 https://github.com/ansun1714/luci-app-qmodem-failover
-git clone --depth 1 https://github.com/mia-clark/luci-app-frp-mgr frp1 && mv -n frp1/luci-app-* ./; rm -rf frp1
+git clone --depth 1 https://github.com/nue-mic/luci-app-frp-mgr frp1 && mv -n frp1/luci-app-* ./; rm -rf frp1
 git clone --depth 1 https://github.com/zhete/luci-app-clientmanager
 git clone --depth 1 https://github.com/migee99/luci-app-clientstatus clientstatus1 && mv -n clientstatus1/*clientstatus ./; rm -rf clientstatus1
 git clone --depth 1 https://github.com/AoXIUy/luci-app-ipv6check
