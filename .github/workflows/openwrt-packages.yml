@@ -14,6 +14,8 @@ on:
         description: 'packages'
         required: false
         default: 'false'	
+env:
+  TZ: Asia/Shanghai
 
 jobs:
   job_openwrt-packages:
@@ -36,7 +38,6 @@ jobs:
       run : |
         git config --global user.email "lllrrr@users.noreply.github.com"
         git config --global user.name "actions-user"
-        sudo timedatectl set-timezone "Asia/Shanghai"
         
     - name: Clone packages
       run: |
