@@ -127,7 +127,7 @@ git clone --depth 1 https://github.com/sirpdboy/luci-app-taskplan taskplan1 && m
 git clone --depth 1 https://github.com/gaobin89/luci-app-timecontrol timecontrol2 && mv -n timecontrol2/luci-app-timecontrol ./; rm -rf timecontrol2
 sed -i "s#IPv4/IPv6') + '<br/>' +#IPv4/IPv6'));#g" luci-app-timecontrol/htdocs/luci-static/resources/view/timecontrol/rules.js
 #sed -i "229,230d" luci-app-timecontrol/htdocs/luci-static/resources/view/timecontrol/rules.js
-sed -i "501d" luci-app-timecontrol/htdocs/luci-static/resources/view/timecontrol/rules.js
+sed -i "552d" luci-app-timecontrol/htdocs/luci-static/resources/view/timecontrol/rules.js
 git clone --depth 1 https://github.com/sirpdboy/luci-app-adguardhome adguardhome1 && mv -n adguardhome1/luci-app-adguardhome ./; rm -rf adguardhome1
 #git clone --depth 1 https://github.com/rule2c/luci-app-timecontrol timecontrol3 && mv -n timecontrol3/luci-app-timecontrol ./; rm -rf timecontrol3
 #git clone --depth 1 https://github.com/rufengsuixing/luci-app-adguardhome adguardhome1 && mv -n adguardhome1/luci-app-adguardhome ./; rm -rf adguardhome1
