@@ -253,7 +253,7 @@ git clone --depth 1 https://github.com/timsaya/luci-app-bandix bandix2 && mv -n 
 #sed -i "s#Bandix 流量监控#流量监控#g" luci-app-bandix/root/usr/share/luci/status/bandix.json
 sed -i "s#Bandix#流量监控#g" luci-app-bandix/root/usr/share/luci/menu.d/luci-app-bandix.json
 #添加意见反馈信息
-sed -i '666,715d' luci-app-bandix/htdocs/luci-static/resources/view/bandix/settings.js
+sed -i '666,675d' luci-app-bandix/htdocs/luci-static/resources/view/bandix/settings.js
 #sed -i '670,676d' luci-app-bandix/htdocs/luci-static/resources/view/bandix/settings.js
 git clone --depth 1 https://github.com/timsaya/openwrt-bandix-plus bandixp1 && mv -n bandixp1/*bandix-plus ./bandix-plus; rm -rf bandixp1
 git clone --depth 1 https://github.com/timsaya/luci-app-bandix-plus bandixp2 && mv -n bandixp2/*bandix-plus ./; rm -rf bandixp2
