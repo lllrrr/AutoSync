@@ -38,7 +38,7 @@ git clone --depth 1 https://github.com/sbwml/luci-app-openlist2 openlist1 && mv 
 #git clone --depth 1 https://github.com/sbwml/luci-app-filemanager
 #git clone --depth 1 https://github.com/QiuSimons/openwrt-mos && mv -n openwrt-mos/luci-app-mosdns ./ ; rm -rf openwrt-mos
 git clone --depth 1 https://github.com/sbwml/luci-app-mentohust mentohust1 && mv -n mentohust1/*mentohust ./; rm -rf mentohust1
-git clone --depth 1 https://github.com/sbwml/luci-app-mosdns openwrt-mos && mv -n openwrt-mos/{*mosdns,v2dat} ./; rm -rf openwrt-mos
+git clone --depth 1 https://github.com/sbwml/luci-app-mosdns openwrt-mos && mv -n openwrt-mos/{*mosdns,geo2txt} ./; rm -rf openwrt-mos
 git clone --depth 1 https://github.com/sbwml/luci-app-qbittorrent qbittorrent1 && mv -n qbittorrent1/{*qbittorrent,qt*,rb*} ./; rm -rf qbittorrent1
 git clone --depth 1 https://github.com/teleostnacl/luci-app-qbittorrent-static qbittorrent-static1 && mv -n qbittorrent-static1/*qbittorrent* ./; rm -rf qbittorrent-static1
 git clone --depth 1 https://github.com/sbwml/luci-app-quickfile quickfile1 && mv -n quickfile1/*quickfile ./; rm -rf quickfile1
@@ -93,7 +93,7 @@ sed -i "s#{{ version.distname }} {{ version.distversion }}-{{ version.distrevisi
 git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config
 git clone --depth 1 https://github.com/eamonxg/luci-theme-aurora
 git clone --depth 1 https://github.com/eamonxg/luci-app-aurora-config
-git clone --depth 1 https://github.com/Beomjun/luci-theme-smart
+#git clone --depth 1 https://github.com/Beomjun/luci-theme-smart
 git_sparse_clone master "https://github.com/x-wrt/com.x-wrt" "x-wrt" luci-app-fakemesh luci-app-wizard
 #git clone --depth 1 https://github.com/yufanpin/luci-app-wizard
 #git clone --depth 1 https://github.com/kiddin9/luci-app-wizard
@@ -266,7 +266,7 @@ git clone --depth 1 https://github.com/animegasan/luci-app-dnsleaktest
 git clone --depth 1 https://github.com/alrescha79-cmd/luci-app-ipinfo-mod
 git clone --depth 1 https://github.com/aurelius1688/luci-app-hardware-monitor hardware-monitor1 && mv -n hardware-monitor1/luci-app-hardware-monitor ./; rm -rf hardware-monitor1
 git clone --depth 1 https://github.com/niki-no/luci-app-mydomain mydomain1 && mv -n mydomain1/luci-app-mydomain ./; rm -rf mydomain1
-git clone --depth 1 https://github.com/LazuliKao/luci-app-portweaver portweaver1 && mv -n portweaver1/*portweaver ./; rm -rf portweaver1
+git clone --depth 1 https://github.com/LazuliKao/luci-app-portweaver portweaver1 && mv -n portweaver1/package/*portweaver* ./; rm -rf portweaver1
 git clone --depth 1 https://github.com/hxzlplp7/luci-app-argo
 git clone --depth 1 https://github.com/hxzlplp7/luci-app-warp
 git clone --depth 1 https://github.com/hxzlplp7/luci-app-socks-clash
@@ -331,12 +331,13 @@ git clone --depth 1 https://github.com/looong-cat/luci-app-netbird netbird1 && m
 git clone --depth 1 https://github.com/c2h2/luci-app-photondns photondns1 && mv -n photondns1/openwrt/*photondns* ./; rm -rf photondns1
 git clone --depth 1 https://github.com/luanmuc/luci-app-systools
 git clone --depth 1 https://github.com/1391959853/luci-app-usbmodem
+#监控公网
 git clone --depth 1 https://github.com/chmod740/luci-app-monitor
 git clone --depth 1 https://github.com/kinmeic/luci-app-bypass
 git clone --depth 1 https://github.com/permails/luci-app-rustdeskd
 git clone --depth 1 https://github.com/rule2c/luci-app-netcontrol netcontrol1 && mv -n netcontrol1/luci-app-netcontrol ./; rm -rf netcontrol1
 git clone --depth 1 https://github.com/permails/luci-app-diskbox
-git clone --depth 1 https://github.com/haitun001/luci-app-monitor
+#git clone --depth 1 https://github.com/haitun001/luci-app-monitor
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
