@@ -341,6 +341,7 @@ git clone --depth 1 https://github.com/permails/luci-app-diskbox
 git clone --depth 1 https://github.com/whzhni1/luci-app-harbor-file-pro harbor1 && mv -n harbor1/luci-app-harbor-file-pro ./; rm -rf harbor1
 git clone --depth 1 https://github.com/System32X-code/luci-app-wanip-selector
 git clone --depth 1 https://github.com/sanwei2493313866-wq/luci-app-autosign
+git clone --depth 1 https://github.com/lyl2dora/luci-app-settings
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
