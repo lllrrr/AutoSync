@@ -298,7 +298,7 @@ git clone --depth 1 https://github.com/letmebe/luci-app-block-host
 git clone --depth 1 https://github.com/nooblk-98/luci-app-netstat
 git clone --depth 1 https://github.com/kinmeic/luci-app-naived
 git clone --depth 1 https://github.com/kenzok8/openwrt-clashoo clashoo1 && mv -n clashoo1/*clashoo ./; rm -rf clashoo1
-git clone --depth 1 https://github.com/tpxcer/luci-app-minigate
+git clone --depth 1 https://github.com/tpxcer/minigate luci-app-minigate
 git clone --depth 1 https://github.com/debugdoctor/luci-app-chinesecalendar
 git clone --depth 1 https://github.com/qsyqn1/luci-app-onlineupgrade
 #git clone --depth 1 https://github.com/qaz69s/luci-app-panda panda1 && mv -n panda1/*panda ./; rm -rf panda1
