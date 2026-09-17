@@ -275,7 +275,7 @@ git clone --depth 1 https://github.com/davidu2003/luci-app-httping
 git clone --depth 1 https://github.com/onchina/luci-app-nvr
 git clone --depth 1 https://github.com/gaoderby/luci-app-kms kms1 && mv -n kms1/luci/applications/luci-app-vlmcsd kms1/package/network/vlmcsd ./; rm -rf kms1
 sed -i "s#Vlmcsd KMS 服务器#KMS 服务器#g" luci-app-vlmcsd/po/zh_Hans/vlmcsd.po
-git clone --depth 1 https://github.com/de-quenx/luci-app-netmonitor netmonitor1 && mv -n netmonitor1/luci-app-netmonitor ./; rm -rf netmonitor1
+#git clone --depth 1 https://github.com/de-quenx/luci-app-netmonitor netmonitor1 && mv -n netmonitor1/luci-app-netmonitor ./; rm -rf netmonitor1
 git clone --depth 1 https://github.com/hzy306016819/luci-app-openvpn-admin
 git clone --depth 1 https://github.com/science2468/luci-app-hev-scoks5-tunnel
 git clone --depth 1 https://github.com/MayflyDestiny/luci-app-mosdns-panel mosdns-panel1 && mv -n mosdns-panel1/luci-app-mosdns-panel ./; rm -rf mosdns-panel1
@@ -343,6 +343,8 @@ git clone --depth 1 https://github.com/System32X-code/luci-app-wanip-selector
 git clone --depth 1 https://github.com/sanwei2493313866-wq/luci-app-autosign
 git clone --depth 1 https://github.com/lyl2dora/luci-app-settings
 git clone --depth 1 https://github.com/rothdren-lion/luci-app-route-tool
+git clone --depth 1 https://github.com/xiaokeikei/luci-app-wan-latency
+git clone --depth 1 https://github.com/LianXia233/luci-app-netmonitor
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
