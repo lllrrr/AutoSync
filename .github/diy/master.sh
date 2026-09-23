@@ -329,7 +329,8 @@ git clone --depth 1 https://github.com/hello-yunshu/luci-app-cloudflare-ip cloud
 git clone --depth 1 https://github.com/r1172464137/luci-app-devman devman2 && mv -n devman2/*devman ./; rm -rf devman2
 git clone --depth 1 https://github.com/hello-yunshu/luci-app-nginx-manager
 git clone --depth 1 https://github.com/hello-yunshu/luci-app-upnp-nat-relay
-git clone --depth 1 https://github.com/svenshi/luci-app-oxidns
+#git clone --depth 1 https://github.com/svenshi/luci-app-oxidns
+git clone --depth 1 https://github.com/hahaher123/luci-app-oxidns
 git clone --depth 1 https://github.com/looong-cat/luci-app-netbird netbird1 && mv -n netbird1/*netbird ./; rm -rf netbird1
 git clone --depth 1 https://github.com/c2h2/luci-app-photondns photondns1 && mv -n photondns1/openwrt/*photondns* ./; rm -rf photondns1
 git clone --depth 1 https://github.com/luanmuc/luci-app-systools
