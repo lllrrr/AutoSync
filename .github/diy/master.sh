@@ -101,7 +101,10 @@ git_sparse_clone master "https://github.com/x-wrt/com.x-wrt" "x-wrt" luci-app-fa
 git clone --depth 1 https://github.com/kiddin9/luci-app-dnsfilter
 #sed -i 's/ipset/dnsmasq_full_ipset/g' luci-app-dnsfilter/Makefile
 git clone --depth 1 https://github.com/kiddin9/luci-app-timewol
-git clone --depth 1 https://github.com/animegasan/luci-app-wolplus
+#lua版本
+#git clone --depth 1 https://github.com/animegasan/luci-app-wolplus
+#Js版本
+git clone --depth 1 https://github.com/sakura-builder1/luci-app-wolplus
 git clone --depth 1 https://github.com/isalikai/luci-app-owq-wol
 git clone --depth 1 https://github.com/pymumu/openwrt-smartdns smartdns
 git clone --depth 1 https://github.com/pymumu/luci-app-smartdns
@@ -345,6 +348,7 @@ git clone --depth 1 https://github.com/lyl2dora/luci-app-settings
 git clone --depth 1 https://github.com/rothdren-lion/luci-app-route-tool
 git clone --depth 1 https://github.com/xiaokeikei/luci-app-wan-latency
 git clone --depth 1 https://github.com/LianXia233/luci-app-netmonitor
+git clone --depth 1 https://github.com/liuyuhao1023/luci-app-ups-manager
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
