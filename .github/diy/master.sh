@@ -171,7 +171,8 @@ git clone --depth 1 https://github.com/sirpdboy/netspeedtest netspeedtest1 && mv
 ##git clone --depth 1 https://github.com/sirpdboy/luci-app-lucky lucky1 && mv -n lucky1/*lucky ./; rm -rf lucky1
 ##sed -i '143,152d' luci-app-lucky/htdocs/luci-static/resources/view/lucky/config.js
 git clone --depth 1 https://github.com/whzhni1/luci-app-lucky lucky1 && mv -n lucky1/luci-app-lucky ./; rm -rf lucky1
-git clone --depth 1 https://github.com/sirpdboy/luci-app-parentcontrol
+#git clone --depth 1 https://github.com/sirpdboy/luci-app-parentcontrol
+git clone --depth 1 https://github.com/neohob/luci-app-parentcontrol
 git clone --depth 1 https://github.com/sirpdboy/luci-app-partexp partexp1 && mv -n partexp1/luci-app-partexp ./; rm -rf partexp1
 #sed -i 's#<br/>For specific usage,.*# )#g' luci-app-partexp/luasrc/model/cbi/partexp/global.lua
 git clone --depth 1 https://github.com/sirpdboy/luci-app-poweroffdevice poweroffdevice1 && mv -n poweroffdevice1/luci-app-poweroffdevice ./; rm -rf poweroffdevice1
