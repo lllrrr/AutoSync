@@ -363,6 +363,7 @@ git clone --depth 1 https://github.com/LQ44AP/luci-app-iptv-scan
 git clone --depth 1 https://github.com/myc2002/luci-app-frpc-multi
 git clone --depth 1 https://github.com/170134536/luci-app-workbuddy
 git clone --depth 1 https://github.com/altman08/luci-app-virtualhere virtualhere1 && mv -n virtualhere1/luci-app-virtualhere ./; rm -rf virtualhere1
+git clone --depth 1 https://github.com/hhCodingCat/luci-app-shellcrash
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
