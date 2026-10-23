@@ -108,7 +108,7 @@ git clone --depth 1 https://github.com/kiddin9/luci-app-timewol
 #Js版本
 git clone --depth 1 https://github.com/sakura-builder1/luci-app-wolplus
 git clone --depth 1 https://github.com/isalikai/luci-app-owq-wol
-git clone --depth 1 https://github.com/pymumu/openwrt-smartdns smartdns
+#git clone --depth 1 https://github.com/pymumu/openwrt-smartdns smartdns
 git clone --depth 1 https://github.com/pymumu/luci-app-smartdns
 sed -i '1711,1734d' luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js
 #git clone --depth 1 https://github.com/yichya/luci-app-xray
