@@ -368,6 +368,8 @@ git clone --depth 1 https://github.com/sbitoh/luci-app-dailyreport
 git clone --depth 1 https://github.com/eamonxg/luci-theme-shadcn
 git clone --depth 1 https://github.com/Arthur97172/luci-app-tasks
 git clone --depth 1 https://github.com/urbanescavenger/luci-app-passwall-speedtest
+git clone --depth 1 https://github.com/Tom13908/luci-app-trusted
+git clone --depth 1 https://github.com/rheatin/luci-app-clientblock
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
