@@ -372,6 +372,7 @@ git clone --depth 1 https://github.com/Tom13908/luci-app-trusted
 git clone --depth 1 https://github.com/rheatin/luci-app-clientblock
 git clone --depth 1 https://github.com/Shuery-Shuai/LuciRtfwUpgrade LuciRtfwUpgrade1 && mv -n LuciRtfwUpgrade1/luci-app-rtfwupgrade ./; rm -rf LuciRtfwUpgrade1
 git clone --depth 1 https://github.com/Arthur97172/luci-app-smartnetpilot
+git clone --depth 1 https://github.com/LianXia233/luci-app-smartmwan
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
