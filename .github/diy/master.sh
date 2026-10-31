@@ -377,8 +377,9 @@ git clone --depth 1 https://github.com/xuyongroger/luci-app-server-ctl server-ct
 git clone --depth 1 https://github.com/meesii/luci-app-webrtc-guard
 git clone --depth 1 https://github.com/altman08/luci-app-shellinabox shellinabox1 && mv -n shellinabox1/*shellinabox shellinabox1/net/shellinabox ./; rm -rf shellinabox1
 git clone --depth 1 https://github.com/w9315273/luci-app-pulse
-git clone --depth 1 https://github.com/ringer520/luci-app-tidynet tidynet1 && mv -n tidynet1/*shellinabox tidynet1/*tidynet ./; rm -rf tidynet1
+git clone --depth 1 https://github.com/ringer520/luci-app-tidynet tidynet1 && mv -n tidynet1/*tidynet tidynet1/*tidynet ./; rm -rf tidynet1
 git clone --depth 1 https://github.com/rheatin/luci-app-languard
+git clone --depth 1 https://github.com/LianXia233/luci-app-chfs chfs1 && mv -n chfs1/*chfs chfs1/*tidynet ./; rm -rf chfs1
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
