@@ -127,7 +127,7 @@ sed -i '5d' luci-app-vnt/luasrc/model/cbi/vnt.lua
 git clone --depth 1 https://github.com/whzhni1/luci-app-vnt2 vnt2 && mv -n vnt2/*vnt* ./; rm -rf vnt2
 #git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2 vnt2 && mv -n vnt2/*vnt2 ./; rm -rf vnt2
 git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2cli vnt2cli && mv -n vnt2cli/*vnt2cli ./; rm -rf vnt2cli
-git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2web vnt2web && mv -n vnt2web/*vnt2web ./; rm -rf vnt2web
+#git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2web vnt2web && mv -n vnt2web/*vnt2web ./; rm -rf vnt2web
 git clone --depth 1 https://github.com/sirpdboy/luci-app-taskplan taskplan1 && mv -n taskplan1/luci-app-taskplan ./; rm -rf taskplan1
 #git clone --depth 1 https://github.com/sirpdboy/luci-app-timecontrol timecontrol1 && mv -n timecontrol1/luci-app-timecontrol ./; rm -rf timecontrol1
 #sed -i 's#..translate("Suggested feedback:.*##g' luci-app-timecontrol/luasrc/model/cbi/timecontrol.lua
@@ -363,7 +363,7 @@ git clone --depth 1 https://github.com/LQ44AP/luci-app-iptv-scan
 git clone --depth 1 https://github.com/myc2002/luci-app-frpc-multi
 git clone --depth 1 https://github.com/170134536/luci-app-workbuddy
 git clone --depth 1 https://github.com/altman08/luci-app-virtualhere virtualhere1 && mv -n virtualhere1/luci-app-virtualhere ./; rm -rf virtualhere1
-git clone --depth 1 https://github.com/hhCodingCat/luci-app-shellcrash
+#git clone --depth 1 https://github.com/hhCodingCat/luci-app-shellcrash
 git clone --depth 1 https://github.com/sbitoh/luci-app-dailyreport
 git clone --depth 1 https://github.com/eamonxg/luci-theme-shadcn
 git clone --depth 1 https://github.com/Arthur97172/luci-app-tasks
@@ -380,7 +380,7 @@ git clone --depth 1 https://github.com/w9315273/luci-app-pulse
 git clone --depth 1 https://github.com/ringer520/luci-app-tidynet tidynet1 && mv -n tidynet1/*tidynet ./; rm -rf tidynet1
 git clone --depth 1 https://github.com/rheatin/luci-app-languard
 git clone --depth 1 https://github.com/LianXia233/luci-app-chfs chfs1 && mv -n chfs1/*chfs ./; rm -rf chfs1
-git clone --depth 1 https://github.com/YunHair/luci-app-gately-plus gately1 && mv -n gately1/*gately ./; rm -rf gately1
+git clone --depth 1 https://github.com/YunHair/luci-app-gately-plus gately1 && mv -n gately1/*gately* ./; rm -rf gately1
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
