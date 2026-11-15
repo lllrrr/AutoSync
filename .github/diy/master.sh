@@ -114,16 +114,16 @@ sed -i '1711,1734d' luci-app-smartdns/htdocs/luci-static/resources/view/smartdns
 #git clone --depth 1 https://github.com/yichya/luci-app-xray
 #git clone --depth 1 https://github.com/liudf0716/luci-app-xfrpc
 git clone -b dev --depth 1 https://github.com/justice2001/luci-app-multi-frpc
-git clone --depth 1 https://github.com/lmq8267/luci-app-caddy caddy1 && mv -n caddy1/luci-app-caddy ./; rm -rf caddy1
-sed -i 's/\(Web 服务器")\).*/\1)/' luci-app-caddy/luasrc/model/cbi/caddy/caddy.lua
-git clone --depth 1 https://github.com/lmq8267/luci-app-cloudflared cloudflared1 && mv -n cloudflared1/luci-app-cloudflared ./; rm -rf cloudflared1
+##git clone --depth 1 https://github.com/lmq8267/luci-app-caddy caddy1 && mv -n caddy1/luci-app-caddy ./; rm -rf caddy1
+##sed -i 's/\(Web 服务器")\).*/\1)/' luci-app-caddy/luasrc/model/cbi/caddy/caddy.lua
+##git clone --depth 1 https://github.com/lmq8267/luci-app-cloudflared cloudflared1 && mv -n cloudflared1/luci-app-cloudflared ./; rm -rf cloudflared1
 #git clone --depth 1 https://github.com/lmq8267/luci-app-easytier easytier1 && mv -n easytier1/*easytier ./; rm -rf easytier1
 git clone --depth 1 https://github.com/EasyTier/luci-app-easytier easytier1 && mv -n easytier1/*easytier ./; rm -rf easytier1
 sed -i 's#Tokio framework. "#Tokio framework. ")#g' luci-app-easytier/luasrc/model/cbi/easytier_status.lua
 sed -i '5,10d' luci-app-easytier/luasrc/model/cbi/easytier_status.lua
 sed -i '679,692d' luci-app-easytier/luasrc/view/easytier/easytier_cli.htm
-git clone --depth 1 https://github.com/lmq8267/luci-app-vnt vnt1 && mv -n vnt1/*vnt* ./; rm -rf vnt1
-sed -i '5d' luci-app-vnt/luasrc/model/cbi/vnt.lua
+##git clone --depth 1 https://github.com/lmq8267/luci-app-vnt vnt1 && mv -n vnt1/*vnt* ./; rm -rf vnt1
+##sed -i '5d' luci-app-vnt/luasrc/model/cbi/vnt.lua
 git clone --depth 1 https://github.com/whzhni1/luci-app-vnt2 vnt2 && mv -n vnt2/*vnt* ./; rm -rf vnt2
 #git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2 vnt2 && mv -n vnt2/*vnt2 ./; rm -rf vnt2
 git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2cli vnt2cli && mv -n vnt2cli/*vnt2cli ./; rm -rf vnt2cli
@@ -292,7 +292,7 @@ git clone --depth 1 https://github.com/findnr/findnr-feeds findnr1 && mv -n find
 git clone --depth 1 https://github.com/LIKE2000-ART/luci-app-picoclaw picoclaw1 && mv -n picoclaw1/*picoclaw ./; rm -rf picoclaw1
 #git clone --depth 1 https://github.com/GennKann/luci-app-picoclaw picoclaw1 && mv -n picoclaw1/*picoclaw ./; rm -rf picoclaw1
 git clone --depth 1 https://github.com/10000ge10000/luci-app-openclaw
-git clone --depth 1 https://github.com/a10463981/luci-app-clawpanel
+#git clone --depth 1 https://github.com/a10463981/luci-app-clawpanel
 git clone --depth 1 https://github.com/jimmyk1m/luci-app-autoredial
 git clone --depth 1 https://github.com/Zesuy/luci-app-multi-login
 git clone --depth 1 https://github.com/pengcong226/luci-app-easy-mwan3
@@ -335,8 +335,9 @@ git clone --depth 1 https://github.com/r1172464137/luci-app-devman devman2 && mv
 git clone --depth 1 https://github.com/hello-yunshu/luci-app-nginx-manager
 git clone --depth 1 https://github.com/hello-yunshu/luci-app-upnp-nat-relay
 #git clone --depth 1 https://github.com/svenshi/luci-app-oxidns
-git clone --depth 1 https://github.com/hahaher123/luci-app-oxidns
+#git clone --depth 1 https://github.com/hahaher123/luci-app-oxidns
 git clone --depth 1 https://github.com/Arthur97172/luci-app-oxidns
+#git clone --depth 1 https://github.com/NetForgeCN/luci-app-oxidns
 git clone --depth 1 https://github.com/looong-cat/luci-app-netbird netbird1 && mv -n netbird1/*netbird ./; rm -rf netbird1
 git clone --depth 1 https://github.com/c2h2/luci-app-photondns photondns1 && mv -n photondns1/openwrt/*photondns* ./; rm -rf photondns1
 git clone --depth 1 https://github.com/luanmuc/luci-app-systools
@@ -378,7 +379,7 @@ git clone --depth 1 https://github.com/xuyongroger/luci-app-server-ctl server-ct
 git clone --depth 1 https://github.com/meesii/luci-app-webrtc-guard
 git clone --depth 1 https://github.com/altman08/luci-app-shellinabox shellinabox1 && mv -n shellinabox1/*shellinabox shellinabox1/net/shellinabox ./; rm -rf shellinabox1
 git clone --depth 1 https://github.com/w9315273/luci-app-pulse
-git clone --depth 1 https://github.com/ringer520/luci-app-tidynet tidynet1 && mv -n tidynet1/*tidynet ./; rm -rf tidynet1
+#git clone --depth 1 https://github.com/ringer520/luci-app-tidynet tidynet1 && mv -n tidynet1/*tidynet ./; rm -rf tidynet1
 git clone --depth 1 https://github.com/rheatin/luci-app-languard
 git clone --depth 1 https://github.com/LianXia233/luci-app-chfs chfs1 && mv -n chfs1/*chfs ./; rm -rf chfs1
 git clone --depth 1 https://github.com/YunHair/luci-app-gately-plus gately1 && mv -n gately1/*gately* ./; rm -rf gately1
