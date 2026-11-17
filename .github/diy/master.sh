@@ -127,7 +127,8 @@ sed -i '679,692d' luci-app-easytier/luasrc/view/easytier/easytier_cli.htm
 git clone --depth 1 https://github.com/whzhni1/luci-app-vnt2 vnt2 && mv -n vnt2/*vnt* ./; rm -rf vnt2
 #git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2 vnt2 && mv -n vnt2/*vnt2 ./; rm -rf vnt2
 git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2cli vnt2cli && mv -n vnt2cli/*vnt2cli ./; rm -rf vnt2cli
-#git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2web vnt2web && mv -n vnt2web/*vnt2web ./; rm -rf vnt2web
+#git clone --depth 1 https://github.com/wanghlstar/luci-app-vnt2web vnt2web && mv -n vnt2web/*vnt2web ./; rm -rf vnt2web
+git clone --depth 1 https://github.com/virkingz/luci-app-vnt2web vnt2web && mv -n vnt2web/*vnt2web ./; rm -rf vnt2web
 git clone --depth 1 https://github.com/sirpdboy/luci-app-taskplan taskplan1 && mv -n taskplan1/luci-app-taskplan ./; rm -rf taskplan1
 #git clone --depth 1 https://github.com/sirpdboy/luci-app-timecontrol timecontrol1 && mv -n timecontrol1/luci-app-timecontrol ./; rm -rf timecontrol1
 #sed -i 's#..translate("Suggested feedback:.*##g' luci-app-timecontrol/luasrc/model/cbi/timecontrol.lua
