@@ -114,16 +114,16 @@ sed -i '1711,1734d' luci-app-smartdns/htdocs/luci-static/resources/view/smartdns
 #git clone --depth 1 https://github.com/yichya/luci-app-xray
 #git clone --depth 1 https://github.com/liudf0716/luci-app-xfrpc
 git clone -b dev --depth 1 https://github.com/justice2001/luci-app-multi-frpc
-##git clone --depth 1 https://github.com/lmq8267/luci-app-caddy caddy1 && mv -n caddy1/luci-app-caddy ./; rm -rf caddy1
-##sed -i 's/\(Web 服务器")\).*/\1)/' luci-app-caddy/luasrc/model/cbi/caddy/caddy.lua
-##git clone --depth 1 https://github.com/lmq8267/luci-app-cloudflared cloudflared1 && mv -n cloudflared1/luci-app-cloudflared ./; rm -rf cloudflared1
+git clone --depth 1 https://github.com/lmq8267/luci-app-caddy caddy1 && mv -n caddy1/luci-app-caddy ./; rm -rf caddy1
+sed -i 's/\(Web 服务器")\).*/\1)/' luci-app-caddy/luasrc/model/cbi/caddy/caddy.lua
+git clone --depth 1 https://github.com/lmq8267/luci-app-cloudflared cloudflared1 && mv -n cloudflared1/luci-app-cloudflared ./; rm -rf cloudflared1
 #git clone --depth 1 https://github.com/lmq8267/luci-app-easytier easytier1 && mv -n easytier1/*easytier ./; rm -rf easytier1
 git clone --depth 1 https://github.com/EasyTier/luci-app-easytier easytier1 && mv -n easytier1/*easytier ./; rm -rf easytier1
 sed -i 's#Tokio framework. "#Tokio framework. ")#g' luci-app-easytier/luasrc/model/cbi/easytier_status.lua
 sed -i '5,10d' luci-app-easytier/luasrc/model/cbi/easytier_status.lua
 sed -i '679,692d' luci-app-easytier/luasrc/view/easytier/easytier_cli.htm
-##git clone --depth 1 https://github.com/lmq8267/luci-app-vnt vnt1 && mv -n vnt1/*vnt* ./; rm -rf vnt1
-##sed -i '5d' luci-app-vnt/luasrc/model/cbi/vnt.lua
+git clone --depth 1 https://github.com/lmq8267/luci-app-vnt vnt1 && mv -n vnt1/*vnt* ./; rm -rf vnt1
+sed -i '5d' luci-app-vnt/luasrc/model/cbi/vnt.lua
 git clone --depth 1 https://github.com/whzhni1/luci-app-vnt2 vnt2 && mv -n vnt2/*vnt* ./; rm -rf vnt2
 #git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2 vnt2 && mv -n vnt2/*vnt2 ./; rm -rf vnt2
 git clone --depth 1 https://github.com/weicaixian86/luci-app-vnt2cli vnt2cli && mv -n vnt2cli/*vnt2cli ./; rm -rf vnt2cli
