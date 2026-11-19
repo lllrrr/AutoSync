@@ -288,7 +288,7 @@ sed -i "s#Vlmcsd KMS 服务器#KMS 服务器#g" luci-app-vlmcsd/po/zh_Hans/vlmcs
 git clone --depth 1 https://github.com/hzy306016819/luci-app-openvpn-admin
 git clone --depth 1 https://github.com/science2468/luci-app-hev-scoks5-tunnel
 git clone --depth 1 https://github.com/MayflyDestiny/luci-app-mosdns-panel mosdns-panel1 && mv -n mosdns-panel1/luci-app-mosdns-panel ./; rm -rf mosdns-panel1
-#git clone --depth 1 https://github.com/zouzonghao/luci-app-dufs
+git clone --depth 1 https://github.com/zouzonghao/luci-app-dufs
 git clone --depth 1 https://github.com/findnr/findnr-feeds findnr1 && mv -n findnr1/{luci-*,cymfrp} ./; rm -rf findnr1
 git clone --depth 1 https://github.com/LIKE2000-ART/luci-app-picoclaw picoclaw1 && mv -n picoclaw1/*picoclaw ./; rm -rf picoclaw1
 #git clone --depth 1 https://github.com/GennKann/luci-app-picoclaw picoclaw1 && mv -n picoclaw1/*picoclaw ./; rm -rf picoclaw1
@@ -388,11 +388,11 @@ git clone --depth 1 https://github.com/GitHubjunjun/luci-app-traffic
 #https://github.com/shb110119/luci-app-traffic
 git clone --depth 1 https://github.com/NetForgeCN/luci-app-atomdns atomdns1 && mv -n atomdns1/*atomdns* ./; rm -rf atomdns1
 
-git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/dufs net/rustdesk-server net/zerotier net/gost net/n2n
-git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-dufs applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
+git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/rustdesk-server net/zerotier net/gost net/n2n
+git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
 #git clone --depth 1 https://github.com/kenzok78/luci-app-gost
 sed -i 's/system/services/g' luci-app-autoreboot/root/usr/share/luci/menu.d/luci-app-autoreboot.json
-git_sparse_clone openwrt-24.10 "https://github.com/openwrt/packages" "24packages" net/curl
+git_sparse_clone openwrt-25.12 "https://github.com/openwrt/packages" "25packages" net/curl net/dufs
 sed -i 's/default LIBCURL_MBEDTLS/default LIBCURL_OPENSSL/g' curl/Config.in
 sed -i 's/title": "daed/title": "DAED/g' luci-app-daed\/root/usr/share/luci/menu.d/luci-app-daed\.json
 #git_sparse_clone openwrt-24.10 "https://github.com/openwrt/luci" "24luci" modules/luci-lua-runtime
