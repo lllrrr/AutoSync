@@ -375,7 +375,6 @@ git clone --depth 1 https://github.com/eamonxg/luci-theme-shadcn
 git clone --depth 1 https://github.com/Arthur97172/luci-app-tasks
 git clone --depth 1 https://github.com/urbanescavenger/luci-app-passwall-speedtest
 git clone --depth 1 https://github.com/Tom13908/luci-app-trusted
-git clone --depth 1 https://github.com/rheatin/luci-app-clientblock
 git clone --depth 1 https://github.com/Shuery-Shuai/LuciRtfwUpgrade LuciRtfwUpgrade1 && mv -n LuciRtfwUpgrade1/luci-app-rtfwupgrade ./; rm -rf LuciRtfwUpgrade1
 git clone --depth 1 https://github.com/Arthur97172/luci-app-smartnetpilot
 git clone --depth 1 https://github.com/LianXia233/luci-app-smartmwan
@@ -384,6 +383,7 @@ git clone --depth 1 https://github.com/meesii/luci-app-webrtc-guard
 git clone --depth 1 https://github.com/altman08/luci-app-shellinabox shellinabox1 && mv -n shellinabox1/*shellinabox shellinabox1/net/shellinabox ./; rm -rf shellinabox1
 git clone --depth 1 https://github.com/w9315273/luci-app-pulse
 #git clone --depth 1 https://github.com/ringer520/luci-app-tidynet tidynet1 && mv -n tidynet1/*tidynet ./; rm -rf tidynet1
+#git clone --depth 1 https://github.com/rheatin/luci-app-clientblock
 git clone --depth 1 https://github.com/rheatin/luci-app-languard
 git clone --depth 1 https://github.com/LianXia233/luci-app-chfs chfs1 && mv -n chfs1/*chfs ./; rm -rf chfs1
 git clone --depth 1 https://github.com/YunHair/luci-app-gately-plus gately1 && mv -n gately1/*gately* ./; rm -rf gately1
