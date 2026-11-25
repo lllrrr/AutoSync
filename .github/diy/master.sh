@@ -350,8 +350,9 @@ git clone --depth 1 https://github.com/hello-yunshu/luci-app-nginx-manager
 git clone --depth 1 https://github.com/hello-yunshu/luci-app-upnp-nat-relay
 #git clone --depth 1 https://github.com/svenshi/luci-app-oxidns
 #git clone --depth 1 https://github.com/hahaher123/luci-app-oxidns
-git clone --depth 1 https://github.com/Arthur97172/luci-app-oxidns
-#git clone --depth 1 https://github.com/NetForgeCN/luci-app-oxidns
+#git clone --depth 1 https://github.com/Arthur97172/luci-app-oxidns
+git clone --depth 1 https://github.com/NetForgeCN/luci-app-oxidns
+git clone --depth 1 https://github.com/NetForgeCN/luci-app-atomdns atomdns1 && mv -n atomdns1/*atomdns* ./; rm -rf atomdns1
 git clone --depth 1 https://github.com/looong-cat/luci-app-netbird netbird1 && mv -n netbird1/*netbird ./; rm -rf netbird1
 git clone --depth 1 https://github.com/c2h2/luci-app-photondns photondns1 && mv -n photondns1/openwrt/*photondns* ./; rm -rf photondns1
 git clone --depth 1 https://github.com/luanmuc/luci-app-systools
@@ -399,7 +400,6 @@ git clone --depth 1 https://github.com/LianXia233/luci-app-chfs chfs1 && mv -n c
 git clone --depth 1 https://github.com/YunHair/luci-app-gately-plus gately1 && mv -n gately1/*gately* ./; rm -rf gately1
 git clone --depth 1 https://github.com/GitHubjunjun/luci-app-traffic
 #https://github.com/shb110119/luci-app-traffic
-git clone --depth 1 https://github.com/NetForgeCN/luci-app-atomdns atomdns1 && mv -n atomdns1/*atomdns* ./; rm -rf atomdns1
 git clone --depth 1 https://github.com/huladabang/luci-app-device-gateway
 git clone --depth 1 https://github.com/r1172464137/luci-app-smartroute
 git clone --depth 1 https://github.com/r1172464137/luci-app-handoff
