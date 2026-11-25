@@ -29,6 +29,10 @@ sed -i "s#<br /><br />如果你在使用中遇到问题，请到这里提交：#
 sed -i 's/ OpenWrt 上/设备上/g' luci-app-wechatpush/po/zh_Hans/wechatpush.po
 #git clone -b openwrt-18.06 --depth 1 https://github.com/tty228/luci-app-wechatpush luci-app-serverchan
 git clone --depth 1 https://github.com/YunHair/luci-app-wechatpush-pro
+sed -i "s#<br /><br />If you encounter any issues while using it, please submit them here.*#'));#g" luci-app-wechatpush-pro/htdocs/luci-static/resources/view/wechatpush-pro/config.js
+sed -i "s#<br /><br />If you encounter any issues while using it, please submit them here:##g" luci-app-wechatpush-pro/po/zh_Hans/wechatpush-pro.po
+sed -i "s#<br /><br />如果你在使用中遇到问题，请到这里提交：##g" luci-app-wechatpush-pro/po/zh_Hans/wechatpush-pro.po
+sed -i 's/ OpenWrt 上/设备上/g' luci-app-wechatpush-pro/po/zh_Hans/wechatpush-pro.po
 git clone --depth 1 https://github.com/zzsj0928/luci-app-pushbot
 #git clone --depth 1 https://github.com/gaoyaxuan/luci-app-pushbot
 git clone --depth 1 https://github.com/sbwml/luci-app-airconnect airconnect1 && mv -n airconnect1/*airconnect ./; rm -rf airconnect1
