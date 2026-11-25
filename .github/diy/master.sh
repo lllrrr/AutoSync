@@ -28,6 +28,7 @@ sed -i "s#<br /><br />If you encounter any issues while using it, please submit 
 sed -i "s#<br /><br />如果你在使用中遇到问题，请到这里提交：##g" luci-app-wechatpush/po/zh_Hans/wechatpush.po
 sed -i 's/ OpenWrt 上/设备上/g' luci-app-wechatpush/po/zh_Hans/wechatpush.po
 #git clone -b openwrt-18.06 --depth 1 https://github.com/tty228/luci-app-wechatpush luci-app-serverchan
+git clone --depth 1 https://github.com/YunHair/luci-app-wechatpush-pro
 git clone --depth 1 https://github.com/zzsj0928/luci-app-pushbot
 #git clone --depth 1 https://github.com/gaoyaxuan/luci-app-pushbot
 git clone --depth 1 https://github.com/sbwml/luci-app-airconnect airconnect1 && mv -n airconnect1/*airconnect ./; rm -rf airconnect1
@@ -146,6 +147,7 @@ git clone --depth 1 https://github.com/sirpdboy/luci-app-adguardhome adguardhome
 #git clone --depth 1 https://github.com/kenzok78/luci-app-adguardhome adguardhome1 && mv -n adguardhome1/luci-app-adguardhome ./; rm -rf adguardhome1
 #git clone --depth 1 https://github.com/xiaoxiao29/luci-app-adguardhome adguardhome2 && mv -n adguardhome2/{AdGuardHome,luci-app-adguardhome} ./; rm -rf adguardhome2
 #git clone --depth 1 https://github.com/w9315273/luci-app-adguardhome
+git clone --depth 1 https://github.com/Ozero-top/luci-app-adguardhome-lite adguardhome3 && mv -n adguardhome3/src/*adguardhome* ./; rm -rf adguardhome3
 git clone --depth 1 https://github.com/sirpdboy/luci-app-advanced
 git clone --depth 1 https://github.com/sirpdboy/luci-app-advancedplus
 git clone --depth 1 https://github.com/sirpdboy/luci-app-chatgpt-web
@@ -248,6 +250,7 @@ git clone --depth 1 https://github.com/lucikap/luci-app-nettask nettask1 && mv -
 git clone --depth 1 https://github.com/torguardvpn/luci-app-easymesh
 #git clone --depth 1 https://github.com/mingxiaoyu/luci-app-cloudflarespeedtest cloudflarespeedtest1 && mv -n cloudflarespeedtest1/applications/luci-app-cloudflarespeedtest ./; rm -rf cloudflarespeedtest1
 git clone --depth 1 https://github.com/stevenjoezhang/luci-app-cloudflarespeedtest
+#git clone --depth 1 https://github.com/kimmax603/luci-app-cloudflarespeedtest
 git clone --depth 1 https://github.com/linkease/nas-packages nas-packages1 && mv -n nas-packages1/network/services/* ./; rm -rf nas-packages1
 git clone --depth 1 https://github.com/linkease/nas-packages-luci nas-packages-luci1 && mv -n nas-packages-luci1/luci/* ./; rm -rf nas-packages-luci1
 git clone --depth 1 https://github.com/linkease/istore istore1 && mv -n istore1/luci/* ./; rm -rf istore1
@@ -338,6 +341,7 @@ git clone --depth 1 https://github.com/BlueSky16st/luci-app-flowlens
 git clone --depth 1 https://github.com/home16668/luci-app-quickfile-go quickfile2 && mv -n quickfile2/luci-app-quickfile-go ./; rm -rf quickfile2
 git clone --depth 1 https://github.com/hello-yunshu/luci-app-cloudflare-ip cloudflare2 && mv -n cloudflare2/package/luci-app-cloudflare-ip ./; rm -rf cloudflare2
 git clone --depth 1 https://github.com/r1172464137/luci-app-devman devman2 && mv -n devman2/*devman ./; rm -rf devman2
+git clone --depth 1 https://github.com/szwjp/luci-app-nginx-console
 git clone --depth 1 https://github.com/hello-yunshu/luci-app-nginx-manager
 git clone --depth 1 https://github.com/hello-yunshu/luci-app-upnp-nat-relay
 #git clone --depth 1 https://github.com/svenshi/luci-app-oxidns
@@ -394,6 +398,7 @@ git clone --depth 1 https://github.com/GitHubjunjun/luci-app-traffic
 git clone --depth 1 https://github.com/NetForgeCN/luci-app-atomdns atomdns1 && mv -n atomdns1/*atomdns* ./; rm -rf atomdns1
 git clone --depth 1 https://github.com/huladabang/luci-app-device-gateway
 git clone --depth 1 https://github.com/r1172464137/luci-app-smartroute
+git clone --depth 1 https://github.com/r1172464137/luci-app-handoff
 
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/packages" "immpack" net/cdnspeedtest net/dae net/daed net/rustdesk-server net/zerotier net/gost net/n2n
 git_sparse_clone openwrt-25.12 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-autoreboot applications/luci-app-dae applications/luci-app-daed applications/luci-app-rustdesk-server applications/luci-app-zerotier applications/luci-app-gost applications/luci-app-n2n
