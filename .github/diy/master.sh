@@ -378,7 +378,7 @@ git clone --depth 1 https://github.com/blueveryday/luci-app-iptv-tool
 git clone --depth 1 https://github.com/170134536/luci-app-migu-iptv
 git clone --depth 1 https://github.com/LQ44AP/luci-app-iptv-scan
 git clone --depth 1 https://github.com/myc2002/luci-app-frpc-multi
-git clone --depth 1 https://github.com/170134536/luci-app-workbuddy
+#git clone --depth 1 https://github.com/170134536/luci-app-workbuddy
 git clone --depth 1 https://github.com/altman08/luci-app-virtualhere virtualhere1 && mv -n virtualhere1/luci-app-virtualhere ./; rm -rf virtualhere1
 #git clone --depth 1 https://github.com/hhCodingCat/luci-app-shellcrash
 git clone --depth 1 https://github.com/sbitoh/luci-app-dailyreport
@@ -401,7 +401,7 @@ git clone --depth 1 https://github.com/YunHair/luci-app-gately-plus gately1 && m
 git clone --depth 1 https://github.com/GitHubjunjun/luci-app-traffic
 #https://github.com/shb110119/luci-app-traffic
 git clone --depth 1 https://github.com/huladabang/luci-app-device-gateway
-git clone --depth 1 https://github.com/r1172464137/luci-app-smartroute
+#git clone --depth 1 https://github.com/r1172464137/luci-app-smartroute
 git clone --depth 1 https://github.com/r1172464137/luci-app-handoff
 git clone --depth 1 https://github.com/Wenjw28/luci-app-reboot reboot1 && mv -n reboot1/*reboot* ./; rm -rf reboot1
 
