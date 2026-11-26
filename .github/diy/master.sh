@@ -33,6 +33,7 @@ sed -i "s#<br /><br />If you encounter any issues while using it, please submit 
 sed -i "s#<br /><br />If you encounter any issues while using it, please submit them here:##g" luci-app-wechatpush-pro/po/zh_Hans/wechatpush-pro.po
 sed -i "s#<br /><br />如果你在使用中遇到问题，请到这里提交：##g" luci-app-wechatpush-pro/po/zh_Hans/wechatpush-pro.po
 sed -i 's/ OpenWrt 上/设备上/g' luci-app-wechatpush-pro/po/zh_Hans/wechatpush-pro.po
+sed -i 's/微信推送-pro/微信推送Pro/g' luci-app-wechatpush-pro/po/zh_Hans/wechatpush-pro.po
 git clone --depth 1 https://github.com/zzsj0928/luci-app-pushbot
 #git clone --depth 1 https://github.com/gaoyaxuan/luci-app-pushbot
 git clone --depth 1 https://github.com/sbwml/luci-app-airconnect airconnect1 && mv -n airconnect1/*airconnect ./; rm -rf airconnect1
@@ -152,6 +153,7 @@ git clone --depth 1 https://github.com/sirpdboy/luci-app-adguardhome adguardhome
 #git clone --depth 1 https://github.com/xiaoxiao29/luci-app-adguardhome adguardhome2 && mv -n adguardhome2/{AdGuardHome,luci-app-adguardhome} ./; rm -rf adguardhome2
 #git clone --depth 1 https://github.com/w9315273/luci-app-adguardhome
 git clone --depth 1 https://github.com/Ozero-top/luci-app-adguardhome-lite adguardhome3 && mv -n adguardhome3/src/*adguardhome* ./; rm -rf adguardhome3
+sed -i 's#"AdGuard Home 管理中心"#"ADH管理中心"#g' luci-app-adguardhome-lite/luasrc/controller/adguardhome_lite.lua
 git clone --depth 1 https://github.com/sirpdboy/luci-app-advanced
 git clone --depth 1 https://github.com/sirpdboy/luci-app-advancedplus
 git clone --depth 1 https://github.com/sirpdboy/luci-app-chatgpt-web
