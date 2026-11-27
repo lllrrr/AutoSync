@@ -153,7 +153,7 @@ git clone --depth 1 https://github.com/sirpdboy/luci-app-adguardhome adguardhome
 #git clone --depth 1 https://github.com/xiaoxiao29/luci-app-adguardhome adguardhome2 && mv -n adguardhome2/{AdGuardHome,luci-app-adguardhome} ./; rm -rf adguardhome2
 #git clone --depth 1 https://github.com/w9315273/luci-app-adguardhome
 git clone --depth 1 https://github.com/Ozero-top/luci-app-adguardhome-lite adguardhome3 && mv -n adguardhome3/src/*adguardhome* ./; rm -rf adguardhome3
-sed -i 's#"AdGuard Home 管理中心"#"ADH管理中心"#g' luci-app-adguardhome-lite/luasrc/controller/adguardhome_lite.lua
+sed -i 's#"AdGuard Home 管理中心"#"AGH管理中心"#g' luci-app-adguardhome-lite/luasrc/controller/adguardhome_lite.lua
 git clone --depth 1 https://github.com/sirpdboy/luci-app-advanced
 git clone --depth 1 https://github.com/sirpdboy/luci-app-advancedplus
 git clone --depth 1 https://github.com/sirpdboy/luci-app-chatgpt-web
